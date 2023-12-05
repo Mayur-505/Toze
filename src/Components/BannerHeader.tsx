@@ -7,13 +7,13 @@ import Image from "next/image";
 
 const BannerHeader = () => {
   const [isMenuOpen, setMenuOpen] = React.useState(false);
-  const menuRef = React.useRef(null);
+  const menuRef = React.useRef<any>(null);
 
   const handleMenuToggle = () => {
     setMenuOpen((prevMenuState) => !prevMenuState);
   };
 
-  const handleOutsideClick = (e) => {
+  const handleOutsideClick = (e:any) => {
     if (menuRef.current && !menuRef.current.contains(e.target)) {
       setMenuOpen(false);
     }
