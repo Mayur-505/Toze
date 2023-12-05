@@ -20,7 +20,7 @@ const TozeTokens = () => {
                     </div>
                     <div className={styles.TozeTokensMobileImgSec}>
                         <Image src={TozeTokenImg} alt="TozeTokenImg" className={styles.TozeTokenImg} />
-                        <Image src={mobileTozeTokensImg} alt="mobileTozeTokensImg" className={styles.TozeTokensMobileImgSec} />
+                        {/* <Image src={mobileTozeTokensImg} alt="mobileTozeTokensImg" className={styles.TozeTokensMobileImgSec} /> */}
                     </div>
                 </div>
             </div>

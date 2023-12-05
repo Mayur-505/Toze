@@ -19,9 +19,9 @@ const Innovation = () => {
                         </h1>
                         <p className={styles.InnovationSubtext}>Dive into AI development effortlessly with TOZE.ai. No-code simplicity democratizes AI, empowering everyone to create powerful applications without the need for expertise. Innovate with ease, breaking down barriers to unleash the potential of artificial intelligence for all.</p>
                     </div>
-                    <div className={styles.InnovationMobileImgSec}>
+                    {/* <div className={styles.InnovationMobileImgSec}>
                         <Image src={mobileInnovationImg} alt="mobileInnovationImg" className={styles.InnovationMobileImgSec} />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

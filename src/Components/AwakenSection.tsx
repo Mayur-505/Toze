@@ -8,15 +8,7 @@ import bannerCircleImagemobile from "../../public/assets/Icons/bannerCircle-mobi
 import Image from "next/image";
 
 function AwakenSection() {
-  const data = [
-    {
-      icon: blogSvg,
-      name: "Blog Bot",
-      role: "Blogger",
-      progress: 100,
-      status: "Active",
-    },
-  ];
+  
   return (
     <div className={styles.awaken_main_section} id="about-us">
       <Image
