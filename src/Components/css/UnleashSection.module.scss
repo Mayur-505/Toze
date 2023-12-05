@@ -1,0 +1,104 @@
+.unleash_section_main {
+  position: relative;
+  padding: 40px 0px;
+  .unleash_section_sub {
+    display: flex;
+    height: 450px;
+    padding: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+    border-radius: 36px;
+    background: #4251da;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 176px;
+      top: 42px;
+      width: 1041.932px;
+      height: 448.667px;
+      background-image: url("../../../public/assets/Icons/unleashsvh1.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      fill: #fff;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      right: -53px;
+      bottom: 0px;
+      fill: #fff;
+      width: 254.468px;
+      height: 260px;
+      background-image: url("../../../public/assets/Icons/unleashstar.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .unleash_section_dis {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 46px;
+      h2 {
+        color: #fff;
+        width: 684px;
+        text-align: center;
+        font-family: "Archivo";
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+      }
+      button {
+        display: flex;
+        width: 153px;
+        padding: 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 12px;
+        background: #e4e4e7;
+        border: none;
+        transition: all 0.3s;
+        cursor: pointer !important;
+        z-index: 3;
+
+        &:hover {
+          background: #e4e4e7be;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .unleash_section_main {
+    padding: 40px 20px;
+    .unleash_section_sub {
+      gap: 32px;
+      height: auto;
+      padding: 40px 20px;
+      &::after {
+        background-image: url("../../../public/assets/Icons/responsiveUnleashsvg.svg");
+        left: 45px;
+        width: 310px;
+      }
+      &::before {
+        width: 135.064px;
+        height: 138px;
+        right: -22px;
+        bottom: 30px;
+      }
+      .unleash_section_dis {
+        h2 {
+          width: 310px;
+          font-size: 48px;
+          font-weight: 500;
+          line-height: 56px;
+        }
+      }
+    }
+  }
+}

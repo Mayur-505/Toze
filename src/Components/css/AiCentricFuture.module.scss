@@ -1,92 +1,396 @@
 .AiCentricFutureSec {
-    padding: 100px;
+  padding: 100px;
 
-    @media (max-width:768px) {
-        padding: 40px 20px;
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+  }
+
+  .AiCentricFutureWrapper {
+    position: relative;
+    .AiCentricFutureSlider {
+      border-radius: 40px 4px 4px 40px;
+      overflow: hidden;
+      .slick-initialized {
+        border-radius: 10px !important;
+      }
+      .AiCentricFutureSliderSub1 {
+        background-color: #18181b;
+        padding: 32px 24px 0px 24px;
+        height: 704px;
+        h3 {
+          color: #fff;
+          font-family: "Archivo";
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 56px;
+          padding-bottom: 12px;
+        }
+        p {
+          color: #e4e4e7;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 20px;
+        }
+        .AiCentricImage {
+          margin: 0 auto;
+          width: fit-content;
+        }
+      }
+      .AiCentricFutureSliderSub2 {
+        background-color: #fafafa;
+        padding: 32px 24px 0px 24px;
+        height: 704px;
+        h3 {
+          color: #27272a;
+          font-family: "Archivo";
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 56px;
+          padding-bottom: 12px;
+        }
+        p {
+          color: #a1a1aa;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 20px;
+        }
+        .AiCentricImage {
+          margin: 0 auto;
+          width: fit-content;
+        }
+      }
+      .AiCentricFutureSliderSub3 {
+        background-color: #4251da;
+        padding: 32px 24px 0px 24px;
+        height: 704px;
+        h3 {
+          color: #fff;
+          font-family: "Archivo";
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 56px;
+          padding-bottom: 12px;
+        }
+        p {
+          color: #e4e4e7;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 20px;
+        }
+        .AiCentricImage {
+          margin: 0 auto;
+          width: fit-content;
+        }
+      }
+      .AiCentricFutureSliderSub4 {
+        background-color: #4251da;
+        padding: 32px 24px 0px 24px;
+        height: 704px;
+        h3 {
+          color: #fff;
+          font-family: "Archivo";
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 56px;
+          padding-bottom: 12px;
+        }
+        p {
+          color: #e4e4e7;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 20px;
+        }
+        .AiCentricImage {
+          margin: 0 auto;
+          width: fit-content;
+        }
+      }
+    }
+    .responsiveAiCentricFutureSlider {
+      overflow: hidden;
+      display: none;
+      .slick-initialized {
+        border-radius: 10px !important;
+      }
+      .AiCentricFutureSliderSub1 {
+        background-color: #18181b;
+        padding: 16px 16px 0px;
+        height: 538px;
+        overflow: hidden;
+        h3 {
+          color: #fff;
+          font-family: "Archivo";
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 40px;
+          padding-bottom: 8px;
+        }
+        p {
+          color: #e4e4e7;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 16px;
+        }
+        .AiCentricImage {
+          margin: 0 auto;
+          width: fit-content;
+          img {
+            width: 196px;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+      }
+      .AiCentricFutureSliderSub2 {
+        background-color: #fafafa;
+        padding: 16px 16px 0px;
+        // height: 538px;
+        overflow: hidden;
+        h3 {
+          color: #27272a;
+          font-family: "Archivo";
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 40px;
+          padding-bottom: 8px;
+        }
+        p {
+          color: #a1a1aa;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 16px;
+        }
+        .AiCentricImage {
+          margin: 0 auto;
+          width: fit-content;
+          img {
+            width: 196px;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+      }
+      .AiCentricFutureSliderSub3 {
+        background-color: #4251da;
+        padding: 16px 16px 0px;
+        height: 538px;
+        overflow: hidden;
+        h3 {
+          color: #fff;
+          font-family: "Archivo";
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 40px;
+          padding-bottom: 8px;
+        }
+        p {
+          color: #e4e4e7;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 16px;
+        }
+        .AiCentricImage {
+          margin: 0 auto;
+          width: fit-content;
+          img {
+            width: 196px;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+      }
+      .AiCentricFutureSliderSub4 {
+        background-color: #fafafa;
+        padding: 16px 16px 0px;
+        height: 538px;
+        overflow: hidden;
+        h3 {
+          color: #27272a;
+          font-family: "Archivo";
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 40px;
+          padding-bottom: 8px;
+        }
+        p {
+          color: #a1a1aa;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 16px;
+        }
+        .AiCentricImage {
+          margin: 0 auto;
+          width: fit-content;
+          img {
+            width: 196px;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+      }
+      .AiCentricFutureSliderSub5 {
+        background-color: #18181b;
+        padding: 16px 16px 0px;
+        height: 538px;
+        overflow: hidden;
+        h3 {
+          color: #fff;
+          font-family: "Archivo";
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 40px;
+          padding-bottom: 8px;
+        }
+        p {
+          color: #e4e4e7;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding-bottom: 16px;
+        }
+        .AiCentricImage {
+          margin: 0 auto;
+          width: fit-content;
+          img {
+            width: 196px;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+      }
     }
 
+    &::before {
+      content: "";
+      background-image: url("../../../public/assets/Icons/cross.svg");
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      background-position: top center;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 13px;
+      transform: rotate(51deg);
+    }
+
+    @media (max-width: 768px) {
+      &::before {
+        content: "";
+        background-image: url("../../../public/assets/Icons/cross-mobile.svg");
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        top: -21px;
+        left: 0;
+      }
+    }
+
+    .AiCentricFutureOuter {
+      margin-bottom: 40px;
+
+      .AiCentricFutureText {
+        text-align: center;
+        color: #18181b;
+        font-family: "Archivo";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 56px;
+        margin-bottom: 24px;
+      }
+
+      .AiCentricFutureSubTextMain {
+        display: flex;
+        justify-content: center;
+
+        .AiCentricFutureSubText {
+          color: #a1a1aa;
+          text-align: center;
+          font-family: "Roboto";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.27px;
+          width: 675px;
+
+          @media (max-width: 768px) {
+            font-size: 16px;
+            width: 320px;
+          }
+        }
+      }
+    }
+
+    .AiCentricFutureInner {
+      .SliderWrapperCard {
+        padding: 32px 24px 24px !important;
+
+        .SliderWrapper {
+          background: #4251da !important;
+          display: flex !important;
+          width: 436px !important;
+          height: 704px !important;
+          padding: 24px !important;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: var(--sm-12, 12px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .AiCentricFutureSec {
     .AiCentricFutureWrapper {
-        position: relative;
-
-        &::before {
-            content: '';
-            background-image: url('../../../public/assets/Icons/cross.svg');
-            position: absolute;
-            height: 100px;
-            width: 100px;
-            background-position: top center;
-            background-repeat: no-repeat;
-            top: 0;
-            left: 13px;
-            transform: rotate(51deg);
-        }
-
-        @media (max-width:768px) {
-            &::before {
-                content: "";
-                background-image: url('../../../public/assets/Icons/cross-mobile.svg');
-                position: absolute;
-                height: 50px;
-                width: 50px;
-                background-position: top center;
-                background-repeat: no-repeat;
-                top: -21px;
-                left: 0;
-            }
-        }
-
-        .AiCentricFutureOuter {
-            margin-bottom: 40px;
-
-            .AiCentricFutureText {
-                text-align: center;
-                color: #18181B;
-                font-family: "Archivo";
-                font-size: 48px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 56px;
-                margin-bottom: 24px;
-            }
-
-            .AiCentricFutureSubTextMain {
-                display: flex;
-                justify-content: center;
-
-                .AiCentricFutureSubText {
-                    color: #A1A1AA;
-                    text-align: center;
-                    font-family: "Roboto";
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 24px;
-                    letter-spacing: 0.27px;
-                    width: 675px;
-
-                    @media (max-width:768px) {
-                        font-size: 16px;
-                        width: 320px;
-                    }
-                }
-            }
-        }
-
-        .AiCentricFutureInner {
-            .SliderWrapperCard{
-                padding: 32px 24px 24px !important;
-
-                .SliderWrapper {
-                    background: #4251DA !important;
-                    display: flex !important;
-                    width: 436px !important;
-                    height: 704px !important;
-                    padding: 24px !important;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: var(--sm-12, 12px);
-                }
-            }
-        }
+      .AiCentricFutureSlider {
+        display: none !important;
+      }
+      .responsiveAiCentricFutureSlider {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 20px;
+        // display: block !important;
+      }
     }
+  }
 }

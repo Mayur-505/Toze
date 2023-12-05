@@ -1,0 +1,210 @@
+.awaken_main_section {
+  display: flex;
+  position: relative;
+
+  .bannerCircleImage {
+    position: absolute;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .bannerCircleImagemobile {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 75px;
+    }
+  }
+
+  .awaken_sub_div1 {
+    position: relative;
+    width: 50%;
+    height: 840px;
+    .awaken_titles {
+      .aiLoworcase {
+        text-transform: uppercase;
+      }
+      position: absolute;
+      top: 184px;
+      left: 100px;
+      max-width: 570px;
+      h1 {
+        color: #27272a;
+        font-family: "Archivo";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 88px;
+        padding-bottom: 24px;
+        span {
+          color: #3c49cf;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -65px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../../../public/assets/Icons/tozeAIsvg.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 1;
+          }
+        }
+      }
+      p {
+        color: #a1a1aa;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.27px;
+      }
+      .Whitepaper {
+        display: flex;
+        gap: 8px;
+        padding: 40px 0px 8px 0px;
+        button {
+          border-radius: 12px;
+          background: #e4e4e7;
+          padding: 10px 24px;
+          outline: none;
+          border: none;
+          width: 168px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          font-family: "Roboto";
+          letter-spacing: 0.24px;
+          transition: all 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            background: #e4e4e793;
+          }
+        }
+        button:first-child {
+          background: #4251da;
+          color: #fff;
+          &:hover {
+            background: #4251dad3;
+          }
+        }
+      }
+      .download_wallet {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 18px;
+        p {
+          color: #18181b;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .awaken_sub_div2 {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    .awaken_aiAgents_div {
+      background-color: #4251da;
+      width: 608px;
+      height: 771px;
+      border-radius: 0px 0px 0px 60px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../../public/assets/Icons/aiAgentSvg.svg");
+        stroke-width: 40px;
+        stroke: rgba(255, 255, 255, 0.05);
+        background-repeat: no-repeat;
+      }
+      .awaken_aiAgents_point {
+        width: 492px;
+        height: 488px;
+        position: absolute;
+        top: 141px;
+        left: -78px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .awaken_sub_div2 {
+    width: 100% !important;
+    .awaken_aiAgents_div {
+      width: 300px !important;
+      height: 324px !important;
+      .awaken_aiAgents_point {
+        top: 28px !important;
+        left: -38px !important;
+        width: 270px !important;
+        height: 240px !important;
+        img {
+          object-fit: contain !important;
+        }
+      }
+    }
+  }
+  .awaken_main_section {
+    flex-direction: column;
+    padding-bottom: 58px;
+    .awaken_sub_div1 {
+      width: 100% !important;
+      height: 560px !important;
+      .awaken_titles {
+        .aiLoworcase {
+          text-transform: lowercase;
+        }
+        max-width: 350px;
+        width: 350px;
+        top: 154px;
+        left: 20px;
+        h1 {
+          font-size: 48px;
+          text-align: center;
+          font-weight: 700;
+          line-height: 56px;
+          padding-bottom: 20px;
+          span {
+            &::after {
+              bottom: -42px;
+            }
+          }
+        }
+        p {
+          font-size: 16px;
+          text-align: center;
+        }
+        .Whitepaper {
+          padding: 44px 0px 0px 8px;
+          justify-content: center;
+          gap: 16px;
+          button {
+            width: 167px;
+            font-size: 15px;
+          }
+        }
+        .download_wallet {
+          padding: 10px 18px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
