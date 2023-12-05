@@ -1,0 +1,145 @@
+.TozeTokensSec {
+    padding: 100px;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url('../../../public/assets/Icons/cross.svg');
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        top: 15px;
+        left: 627px;
+    }
+
+    @media (max-width:768px) {
+        padding: 80px 20px 40px;
+
+        &::before {
+            content: "";
+            background-image: url('../../../public/assets/Icons/cross-mobile.svg');
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            top: 25px;
+            left: 322px;
+        }
+    }
+
+    .mainTozeTokens {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width:768px) {
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .TozeTokensInner {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+
+            @media (max-width:768px) {
+                display: block;
+                width: 100%;
+            }
+
+            .TozeTokensTextsec {
+                position: relative;
+                width: 50%;
+
+                @media (max-width:768px) {
+                    margin-left: 0;
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
+
+                .TozeTokensSubButton {
+                    color: #4251DA;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0.3px;
+                    margin-bottom: 12px;
+
+                    @media (max-width:768px) {
+                        font-size: 18px;
+                        line-height: 24px;
+                        letter-spacing: 0.27px;
+                        text-transform: uppercase;
+                        margin-bottom: 8px;
+
+                        .TozeTokensspan {
+                            color: #A1A1AA;
+                        }
+                    }
+                }
+
+                .TozeTokenstext {
+                    color: #18181B;
+                    font-family: "Archivo";
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 56px;
+                    margin-bottom: 24px;
+
+                    @media (max-width:768px) {
+                        margin-bottom: 16px;
+                    }
+                }
+
+                .TozeTokensSubtext {
+                    color: #A1A1AA;
+                    font-family: "Roboto";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.27px;
+
+                    @media (max-width:768px) {
+                        margin-bottom: 24px;
+                    }
+                }
+
+            }
+
+            .TozeTokensImgSec {
+                position: relative;
+                width: 50%;
+
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
+
+            .TozeTokensMobileImgSec {
+
+                .TozeTokenImg {
+                    @media (max-width:768px) {
+                        display: none;
+                    }
+                }
+
+                .TozeTokensMobileImgSec {
+                    display: none;
+
+                    @media (max-width:768px) {
+                        display: block;
+                        width: 350px;
+                        height: 261px;
+                    }
+                }
+            }
+        }
+    }
+}

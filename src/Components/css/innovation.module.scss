@@ -1,0 +1,148 @@
+.InnovationSec {
+    padding: 100px;
+    position: relative;
+
+    &::before{
+        content: '';
+        background-image: url('../../../public/assets/Icons/cross.svg');
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        top: 15px;
+        left: 627px;
+    }
+
+    @media (max-width:768px) {
+        padding: 40px 20px;
+
+        &::before{
+            content: "";
+            background-image: url('../../../public/assets/Icons/cross-mobile.svg');
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 322px;
+        }
+    }
+
+    .mainInnovation {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width:768px) {
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .InnovationInner {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+
+            @media (max-width:768px) {
+                display: block;
+                width: 100%;
+            }
+
+            .InnovationTextsec {
+                position: relative;
+                width: 50%;
+
+                @media (max-width:768px) {
+                    margin-left: 0;
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
+
+                .InnovationSubButton {
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0.015em;
+                    color: #A1A1AA;
+                    margin-bottom: 12px;
+
+                    .Innovationspan {
+                        font-size: 20px;
+                        color: #4251DA;
+                    }
+
+                    @media (max-width:768px) {
+                        font-size: 18px;
+                        margin-bottom: 8px;
+
+                        .Innovationspan {
+                            font-size: 20px;
+                            color: #4251DA;
+                        }
+                    }
+                }
+
+                .Innovationtext {
+                    font-family: "Archivo";
+                    font-size: 48px;
+                    font-weight: 500;
+                    line-height: 56px;
+                    color: #18181B;
+                    margin-bottom: 24px;
+
+                    @media (max-width:768px) {
+                        font-size: 40px;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                .InnovationSubtext {
+                    font-family: "Roboto";
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.015em;
+                    color: #A1A1AA;
+                    // text-align: justify;
+                    width: 530px;
+
+                    @media (max-width:768px) {
+                        font-family: Roboto;
+                        font-size: 16px;
+                        letter-spacing: 0em;
+                        text-align: justify;
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            .InnovationImgSec {
+                position: relative;
+                width: 50%;
+
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
+
+            .InnovationMobileImgSec {
+                display: none;
+
+                @media (max-width:768px) {
+                    display: inline-block;
+                    width: 100%;
+                    height: auto;
+
+                    .InnovationImg {
+                        width: 335px;
+                        height: 327px;
+                    }
+                }
+            }
+        }
+    }
+}
