@@ -16,31 +16,54 @@
         left: 555px;
     }
 
-    &::after {
-        content: '';
-        background-image: url('../../../public/assets/Icons/cross.svg');
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        background-position: top center;
-        background-repeat: no-repeat;
-        bottom: -12px;
-        right: 178px;
-    }
+    // &::after {
+    //     content: '';
+    //     background-image: url('../../../public/assets/Icons/cross.svg');
+    //     position: absolute;
+    //     height: 100px;
+    //     width: 100px;
+    //     background-position: top center;
+    //     background-repeat: no-repeat;
+    //     bottom: -12px;
+    //     right: 178px;
+    // }
 
 
     @media (max-width: 768px) {
-        padding: 0 20px;
+        padding: 40px 20px;
+
+        &::before {
+            content: "";
+            background-image: url('../../../public/assets/Icons/cross-mobile.svg');
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            top: 22px;
+            left: 316px;
+        }
+        &::after {
+            content: '';
+            background-image: url('../../../public/assets/Icons/cross-mobile.svg');
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            bottom: -85px;
+            right: 75px;
+        }
     }
 
     .MilestonesMain {
         width: 100%;
 
         .MilestonesTextInner {
-            margin-bottom: 51px;
+            margin-bottom: 40px;
 
             @media (max-width: 768px) {
-                margin-bottom: 30px;
+                margin-bottom: 24px;
             }
 
             .MilestonesText {
@@ -302,14 +325,6 @@
                 font-weight: 400;
                 line-height: 24px;
                 margin-bottom: 8px;
-
-                &:last-child {
-                    margin-bottom: 0px;
-                }
-
-                .arrowImg {
-                    margin: 2px 10px 0 0;
-                }
             }
 
             time {
@@ -328,115 +343,173 @@
             @media (max-width:768px) {
                 display: inline-block;
 
-                .c_timeline__item {
-                    position: relative;
-                    gap: 1.5rem;
-                    list-style: none;
-                    padding-bottom: 56px;
+                .c_timeline {
+                    &.c_timeline_main {
+                        position: relative;
 
-                    &:last-child {
-                        padding-bottom: 0;
+                        .before {
+                            position: absolute;
+                            top: 0;
+                            left: 7%;
+                            transform: translateX(-50%);
+                            width: 10px;
+                            height: 67px;
+                            z-index: 0;
+                        }
+
+                        .after {
+                            position: absolute;
+                            bottom: -29px;
+                            left: 7%;
+                            transform: translateX(-50%);
+                            width: 10px;
+                            height: 67px;
+                            z-index: 0;
+
+                            img {
+                                transform: rotate(180deg);
+                            }
+                        }
 
                         &::after {
-                            display: none;
-                        }
-                    }
-
-                    &::after {
-                        position: absolute;
-                        content: "";
-                        top: 13px;
-                        left: 11px;
-                        height: 100%;
-                        border: 10px solid rgba(228, 228, 231, 0.8);
-                        ;
-                        z-index: -1;
-                    }
-
-                    .content_card_left {
-                        transform: translateX(60px);
-
-                        .timeyear {
-                            color: #0E0E0E;
-                            font-family: Poppins;
-                            font-size: 20px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: 28px;
-                        }
-
-                        .content_card {
-                            display: flex;
-                            padding: var(--sm-16, 16px);
-                            flex-direction: column;
-                            align-items: flex-start;
-                            gap: var(--sm-12, 12px);
-                            align-self: stretch;
-                            border-radius: var(--CR-16, 16px);
-                            border: 1px solid var(--primary-006-m, #4251DA);
-                            background: var(--white-007, #FFF);
-                            // box-shadow: 0px 0px 56px 0px rgba(66, 81, 218, 0.06);
-
-                            // &::before {
-                            //     content: '';
-                            //     position: absolute;
-                            //     background-image: url("../../../public//assets/Icons//arrowCircle.svg");
-                            //     background-repeat: no-repeat;
-                            //     background-position: top right;
-                            //     width: 72px;
-                            //     height: 72px;
-                            //     top: 0;
-                            //     right: 0;
-                            //     z-index: -1;
-                            //     object-fit: contain;
-                            //     border-top-right-radius: 16px;
-                            // }
-
-                            .c_timeline__title {
-                                font-weight: bold;
-                                margin-bottom: 0.5rem;
-                            }
-
-                            .c_timeline__desc {
-                                color: #0E0E0E;
-                                font-family: Satoshi;
-                                font-size: 16px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: 24px;
-
-                                &:last-child {
-                                    margin-bottom: 0px;
-                                }
-
-                                .arrowImg {
-                                    margin: 2px 10px 0 0;
-                                }
-                            }
-                        }
-
-                        .timeLineYear {
                             position: absolute;
-                            color: #0E0E0E;
-                            font-size: 22px;
-                            font-weight: 500;
-                            line-height: 30px;
-                            top: 0;
-                            transform: translate(-65px, 3px);
-                            display: flex;
-                            align-items: center;
-                            gap: 24px;
+                            content: "";
+                            top: 39px;
+                            left: 7%;
+                            height: calc(100% - 20px);
+                            transform: translateX(-50%);
+                            border: 5px solid rgba(228, 228, 231, 0.8);
+                            z-index: -1;
+                        }
+                    }
 
-                            .BoxshadowImg {
-                                width: 48px;
-                                height: 48px;
-                                border-radius: 50%;
+
+                    .c_timeline__item {
+                        position: relative;
+                        gap: 1.5rem;
+                        list-style: none;
+                        padding-bottom: 16px;
+
+                        &:last-child {
+                            padding-bottom: 0;
+
+                            &::after {
+                                display: none;
+                            }
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            top: 90px;
+                            left: 11px;
+                            height: 100%;
+                            border: 5px solid rgba(228, 228, 231, 0.8);
+                            z-index: -1;
+                        }
+
+                        .content_card_left {
+                            transform: translateX(60px);
+
+                            .content_card {
+                                display: flex;
+                                padding: var(--sm-16, 16px);
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: var(--sm-12, 12px);
+                                align-self: stretch;
+                                border-radius: 16px;
                                 border: 1px solid #4251DA;
+                                background: #FFF;
+                                z-index: 1;
+                                position: relative;
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    background-image: url("../../../public//assets/Icons//arrowCircle.svg");
+                                    background-repeat: no-repeat;
+                                    background-position: top right;
+                                    width: 64px;
+                                    height: 64px;
+                                    top: 0;
+                                    right: 0;
+                                    z-index: -1;
+                                    object-fit: contain;
+                                    border-top-right-radius: 16px;
+                                }
+
+                                .c_timeline__title {
+                                    color: #4251DA;
+                                    font-family: "Archivo";
+                                    font-size: 32px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 40px;
+                                }
+
+                                .c_timeline__desc li::before {
+                                    content: "";
+                                    background-image: url('../../../public/assets//Icons/circle.svg');
+                                    width: 10px;
+                                    height: 10px;
+                                    background-repeat: no-repeat;
+                                    display: inline-flex;
+                                    background-position: center;
+                                    margin-right: 8px;
+                                }
+
+                                .c_timeline__desc {
+                                    list-style: none;
+                                    color: #A1A1AA;
+                                    font-family: "Roboto";
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px;
+                                    letter-spacing: 0.21px;
+                                    gap: 12px;
+                                }
+                            }
+
+                            .timeLineYear {
+                                position: absolute;
+                                color: #0E0E0E;
+                                font-size: 22px;
+                                font-weight: 500;
+                                line-height: 30px;
+                                top: 0;
+                                transform: translate(-65px, 45px);
                                 display: flex;
                                 align-items: center;
-                                justify-content: center;
-                                z-index: 1;
-                                background: white;
+                                gap: 24px;
+
+                                .BoxshadowImg {
+                                    width: 48px;
+                                    height: 48px;
+                                    border-radius: 50%;
+                                    border: 1px solid #4251DA;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    z-index: 1;
+                                    background: white;
+
+                                    &.RightArrow {
+                                        position: relative;
+        
+                                        &::before {
+                                            content: '';
+                                            background-image: url("../../../public/assets/Icons/borderRight.svg");
+                                            width: 74px;
+                                            height: 62px;
+                                            position: absolute;
+                                            top: -38px;
+                                            right: -59px;
+                                            background-repeat: no-repeat;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

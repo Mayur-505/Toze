@@ -5,8 +5,8 @@ import BoxshadowImg from '../../public/assets/Icons/boxshadow.svg'
 import BoxEffect from '../../public/assets/Images/boxEffect.svg'
 
 const Milestones = () => {
-  return (
-    <section className={styles.MilestonesSec} id='Milestones'>
+    return (
+        <section className={styles.MilestonesSec} id='Milestones'>
             <div className={styles.MilestonesMain}>
                 <div className={styles.MilestonesTextInner}>
                     <h3 className={styles.MilestonesText}>Milestones</h3>
@@ -34,7 +34,7 @@ const Milestones = () => {
                                         </ul>
                                     </div>
                                     <div className={styles.timeLineYear}>
-                                        <span className={styles.BoxshadowImg}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span> 
+                                        <span className={styles.BoxshadowImg}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span>
                                     </div>
                                 </div>
                             </li>
@@ -49,7 +49,7 @@ const Milestones = () => {
                                         </ul>
                                     </div>
                                     <div className={styles.timeLineYear}>
-                                        <span className={styles.BoxshadowImg}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span> 
+                                        <span className={styles.BoxshadowImg}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span>
                                     </div>
                                 </div>
                             </li>
@@ -64,7 +64,7 @@ const Milestones = () => {
                                         </ul>
                                     </div>
                                     <div className={styles.timeLineYear}>
-                                        <span className={styles.BoxshadowImg}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span> 
+                                        <span className={styles.BoxshadowImg}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span>
                                     </div>
                                 </div>
                             </li>
@@ -80,7 +80,7 @@ const Milestones = () => {
                                         </ul>
                                     </div>
                                     <div className={styles.timeLineYear}>
-                                        <span className={`${styles.BoxshadowImg} ${styles.RightArrow}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span> 
+                                        <span className={`${styles.BoxshadowImg} ${styles.RightArrow}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span>
                                     </div>
                                 </div>
                             </li>
@@ -94,7 +94,7 @@ const Milestones = () => {
                                         </ul>
                                     </div>
                                     <div className={styles.timeLineYear}>
-                                        <span className={`${styles.BoxshadowImg} ${styles.RightArrow}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span> 
+                                        <span className={`${styles.BoxshadowImg} ${styles.RightArrow}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span>
                                     </div>
                                 </div>
                             </li>
@@ -102,71 +102,83 @@ const Milestones = () => {
                     </ol>
                 </div>
                 <div className={styles.Mobilewrapper}>
-                    <ol className={styles.c_timeline}>
+                <ol className={`${styles.c_timeline} ${styles.c_timeline_main}`}>
+                        <span className={styles.before}>
+                            <Image src={BoxEffect} alt="BoxEffect" />
+                        </span>
+                        <span className={styles.after}>
+                            <Image src={BoxEffect} alt="BoxEffect" />
+                        </span>
                         <li className={styles.c_timeline__item}>
                             <div className={styles.content_card_left}>
-                            <span className={styles.timeyear}>2024 2Q</span>
-                            <div className={styles.content_card}>
-                                        <h3 className={styles.c_timeline__title}>2023 4Q</h3>
-                                        <ul className={styles.c_timeline__desc}>
-                                            <li>White paper 1.0</li>
-                                            <li>Toze.AI wallet release</li>
-                                            <li>Toze.AI beta Development</li>
-                                            <li>Private Sale</li>
-                                        </ul>
-                                    </div>
+                                <div className={styles.content_card}>
+                                    <h3 className={styles.c_timeline__title}>2023 4Q</h3>
+                                    <ul className={styles.c_timeline__desc}>
+                                        <li>White paper 1.0</li>
+                                        <li>Toze.AI wallet release</li>
+                                        <li>Toze.AI beta Development</li>
+                                        <li>Private Sale</li>
+                                    </ul>
+                                </div>
                                 <div className={styles.timeLineYear}>
-                                <span className={`${styles.BoxshadowImg}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span> 
+                                    <span className={`${styles.BoxshadowImg} ${styles.RightArrow}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span>
                                 </div>
                             </div>
                         </li>
                         <li className={styles.c_timeline__item}>
                             <div className={styles.content_card_left}>
-                            <span className={styles.timeyear}>2024 2Q</span>
                                 <div className={styles.content_card}>
-                                    <p className={styles.c_timeline__desc}><Image src={""} alt='""' className={styles.arrowImg} /> Imperial Assets beta launch</p>
-                                    <p className={styles.c_timeline__desc}><Image src={""} alt='""' className={styles.arrowImg} /> Listing at global Exchange</p>
+                                    <h3 className={styles.c_timeline__title}>2024 4Q</h3>
+                                    <ul className={styles.c_timeline__desc}>
+                                        <li>Imperial Assets beta launch</li>
+                                        <li>Listing at global Exchange</li>
+                                    </ul>
                                 </div>
                                 <div className={styles.timeLineYear}>
-                                <span className={`${styles.BoxshadowImg}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span> 
+                                    <span className={`${styles.BoxshadowImg} ${styles.RightArrow}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span>
                                 </div>
                             </div>
                         </li>
                         <li className={styles.c_timeline__item}>
                             <div className={styles.content_card_left}>
-                            <span className={styles.timeyear}>2024 2Q</span>
                                 <div className={styles.content_card}>
-                                    <p className={styles.c_timeline__desc}><Image src={""} alt='""' className={styles.arrowImg} /> Enhance security measures</p>
-                                    <p className={styles.c_timeline__desc}><Image src={""} alt='""' className={styles.arrowImg} /> Diversifying real estate assets</p>
-                                    <p className={styles.c_timeline__desc}><Image src={""} alt='""' className={styles.arrowImg} /> More listings</p>
+                                    <h3 className={styles.c_timeline__title}>2024 4Q</h3>
+                                    <ul className={styles.c_timeline__desc}>
+                                        <li>Enhance security measures</li>
+                                        <li>Introduce staking mechanisms</li>
+                                    </ul>
                                 </div>
                                 <div className={styles.timeLineYear}>
-                                <span className={`${styles.BoxshadowImg}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span> 
+                                    <span className={`${styles.BoxshadowImg} ${styles.RightArrow}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span>
                                 </div>
                             </div>
                         </li>
                         <li className={styles.c_timeline__item}>
                             <div className={styles.content_card_left}>
-                            <span className={styles.timeyear}>2024 2Q</span>
                                 <div className={styles.content_card}>
-                                    <p className={styles.c_timeline__desc}><Image src={""} alt='""' className={styles.arrowImg} /> Imperial Assets beta launch</p>
-                                    <p className={styles.c_timeline__desc}><Image src={""} alt='""' className={styles.arrowImg} /> Listing at global Exchange</p>
+                                    <h3 className={styles.c_timeline__title}>2024 4Q</h3>
+                                    <ul className={styles.c_timeline__desc}>
+                                        <li>Enhance security measures</li>
+                                        <li>Introduce staking mechanisms</li>
+                                    </ul>
                                 </div>
                                 <div className={styles.timeLineYear}>
-                                <span className={`${styles.BoxshadowImg}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span> 
+                                    <span className={`${styles.BoxshadowImg} ${styles.RightArrow}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span>
                                 </div>
                             </div>
                         </li>
                         <li className={styles.c_timeline__item}>
                             <div className={styles.content_card_left}>
-                            <span className={styles.timeyear}>2024 2Q</span>
                                 <div className={styles.content_card}>
-                                    <p className={styles.c_timeline__desc}><Image src={""} alt='""' className={styles.arrowImg} /> Enhance security measures</p>
-                                    <p className={styles.c_timeline__desc}><Image src={""} alt='""' className={styles.arrowImg} /> Diversifying real estate assets</p>
-                                    <p className={styles.c_timeline__desc}><Image src={""} alt='""' className={styles.arrowImg} /> More listings</p>
+                                    <h3 className={styles.c_timeline__title}>2024 4Q</h3>
+                                    <ul className={styles.c_timeline__desc}>
+                                        <li>Continuous innovation</li>
+                                        <li>Community involvement</li>
+                                        <li>More listings</li>
+                                    </ul>
                                 </div>
                                 <div className={styles.timeLineYear}>
-                                <span className={`${styles.BoxshadowImg}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span> 
+                                    <span className={`${styles.BoxshadowImg} ${styles.RightArrow}`}><Image src={BoxshadowImg} alt='BoxshadowImg' className={styles.stepperImg} /></span>
                                 </div>
                             </div>
                         </li>
@@ -174,7 +186,7 @@ const Milestones = () => {
                 </div>
             </div>
         </section>
-  )
+    )
 }
 
 export default Milestones

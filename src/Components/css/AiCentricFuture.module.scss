@@ -1,0 +1,92 @@
+.AiCentricFutureSec {
+    padding: 100px;
+
+    @media (max-width:768px) {
+        padding: 40px 20px;
+    }
+
+    .AiCentricFutureWrapper {
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url('../../../public/assets/Icons/cross.svg');
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 13px;
+            transform: rotate(51deg);
+        }
+
+        @media (max-width:768px) {
+            &::before {
+                content: "";
+                background-image: url('../../../public/assets/Icons/cross-mobile.svg');
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                background-position: top center;
+                background-repeat: no-repeat;
+                top: -21px;
+                left: 0;
+            }
+        }
+
+        .AiCentricFutureOuter {
+            margin-bottom: 40px;
+
+            .AiCentricFutureText {
+                text-align: center;
+                color: #18181B;
+                font-family: "Archivo";
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 56px;
+                margin-bottom: 24px;
+            }
+
+            .AiCentricFutureSubTextMain {
+                display: flex;
+                justify-content: center;
+
+                .AiCentricFutureSubText {
+                    color: #A1A1AA;
+                    text-align: center;
+                    font-family: "Roboto";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.27px;
+                    width: 675px;
+
+                    @media (max-width:768px) {
+                        font-size: 16px;
+                        width: 320px;
+                    }
+                }
+            }
+        }
+
+        .AiCentricFutureInner {
+            .SliderWrapperCard{
+                padding: 32px 24px 24px !important;
+
+                .SliderWrapper {
+                    background: #4251DA !important;
+                    display: flex !important;
+                    width: 436px !important;
+                    height: 704px !important;
+                    padding: 24px !important;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: var(--sm-12, 12px);
+                }
+            }
+        }
+    }
+}
