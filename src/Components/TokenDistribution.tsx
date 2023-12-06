@@ -22,9 +22,9 @@ function TokenDistribution() {
             alt="tokenImage"
             className={styles.tokenImage}
           />
-          <div className={styles.Token_distribution_subimage}>
+          {/* <div className={styles.Token_distribution_subimage}>
             <Image src={tokensubImage} alt="tokensubImage" />
-          </div>
+          </div> */}
           <div className={styles.Token_distribution_image_dis}>
             <div className={styles.dis1}>
               <p>

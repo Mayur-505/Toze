@@ -22,7 +22,6 @@
   .awaken_sub_div1 {
     position: relative;
     width: 50%;
-    height: 840px;
     .awaken_titles {
       padding: 184px 100px;
       .aiLoworcase {
@@ -141,10 +140,15 @@
   }
 }
 @media (max-width: 1024px) {
+  .awaken_main_section {
+    .bannerCircleImage {
+      width: 100% !important;
+    }
+  }
   .awaken_sub_div1 {
     width: 60% !important;
     .awaken_titles {
-      padding: 150px 50px !important;
+      padding: 150px 100px !important;
       h1 {
         font-size: 50px !important;
         line-height: 60px !important;
@@ -168,16 +172,21 @@
 }
 
 @media (max-width: 768px) {
+  .awaken_main_section {
+    .bannerCircleImagemobile {
+      width: 100% !important;
+    }
+  }
   .awaken_sub_div2 {
     width: 100% !important;
     .awaken_aiAgents_div {
-      width: 300px !important;
-      height: 324px !important;
+      width: 75% !important;
+      height: 500px !important;
       .awaken_aiAgents_point {
-        top: 28px !important;
-        left: -38px !important;
-        width: 270px !important;
-        height: 240px !important;
+        top: 44px !important;
+        left: -55px !important;
+        width: 340px !important;
+        height: auto !important;
         img {
           object-fit: contain !important;
         }
@@ -191,7 +200,7 @@
       width: 100% !important;
       height: 560px !important;
       .awaken_titles {
-        padding: 145px 20px !important;
+        padding: 145px 150px !important;
         .aiLoworcase {
           text-transform: lowercase;
         }
@@ -223,6 +232,42 @@
         .download_wallet {
           padding: 10px 18px;
           text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .awaken_main_section {
+    .awaken_sub_div1 {
+      .awaken_titles {
+        padding: 145px 40px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .awaken_main_section {
+    .awaken_sub_div1 {
+      .awaken_titles {
+        padding: 145px 20px !important;
+      }
+    }
+  }
+  .awaken_sub_div2 {
+    width: 100% !important;
+    .awaken_aiAgents_div {
+      width: 300px !important;
+      height: 324px !important;
+      .awaken_aiAgents_point {
+        top: 28px !important;
+        left: -38px !important;
+        width: 270px !important;
+        height: 240px !important;
+        img {
+          object-fit: contain !important;
         }
       }
     }

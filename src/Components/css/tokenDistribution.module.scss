@@ -1,6 +1,6 @@
 .Token_distribution_main {
   padding-bottom: 0;
-  
+
   position: relative;
   .Token_distribution_sub {
     display: block;
@@ -53,20 +53,20 @@
       }
     }
     .Token_distribution_image {
-      height: 836px;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       .Token_distribution_image_dis {
-        position: relative;
         div {
           border-radius: 12px;
           border: 1px solid #a3aaee;
           background: #fff;
           width: 200px;
           padding: 12px;
+          position: static;
+          z-index: 1;
           p {
             color: #18181b;
             text-align: center;
@@ -74,65 +74,66 @@
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
-            line-height: 28px; /* 155.556% */
+            line-height: 28px;
             letter-spacing: 0.72px;
           }
         }
         .dis1 {
           position: absolute;
-          top: -290px;
-          left: -750px;
+          top: 167px;
+          left: 0px;
         }
         .dis2 {
           position: absolute;
-          top: -130px;
-          left: -700px;
+          top: 320px;
+          left: 47px;
         }
         .dis3 {
           position: absolute;
-          top: 20px;
-          left: -750px;
+          top: 470px;
+          left: 0px;
         }
         .dis4 {
           position: absolute;
-          top: 170px;
-          left: -650px;
+          top: 620px;
+          left: 100px;
         }
         .dis5 {
           position: absolute;
-          top: -290px;
-          left: 192px;
+          top: 167px;
+          left: 940px;
         }
         .dis6 {
           position: absolute;
-          top: -140px;
-          left: 280px;
+          top: 305px;
+          left: 1020px;
         }
         .dis7 {
           position: absolute;
-          top: 10px;
-          left: 192px;
+          top: 450px;
+          left: 982px;
         }
         .dis8 {
           position: absolute;
-          top: 160px;
-          left: 120px;
+          top: 595px;
+          left: 870px;
         }
       }
       .tokenImage {
         position: relative;
         z-index: 1;
+        height: auto;
       }
-      .Token_distribution_subimage {
-        position: absolute;
-        left: 57px;
-        top: 128px;
-        width: 930.716px;
-        height: 577.614px;
-        background-image: url("../../../public/assets/Icons/tozeAiLines.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+      // .Token_distribution_subimage {
+      //   position: absolute;
+      //   left: 57px;
+      //   top: 128px;
+      //   width: 930.716px;
+      //   height: 577.614px;
+      //   background-image: url("../../../public/assets/Icons/tozeAiLines.svg");
+      //   background-repeat: no-repeat;
+      //   background-size: cover;
+      // }
     }
   }
   .responsive_token_said_dis {
@@ -198,45 +199,101 @@
         }
         .dis1 {
           position: absolute;
-          top: 320px;
-          left: 23px;
+          top: 262px;
+          left: 208px;
         }
         .dis2 {
           position: absolute;
-          top: 225px;
-          left: 56px;
+          top: 165px;
+          left: 245px;
         }
         .dis3 {
           position: absolute;
-          top: 225px;
-          left: 199px;
+          top: 165px;
+          left: 388px;
         }
         .dis4 {
           position: absolute;
-          top: 320px;
-          left: 233px;
+          top: 262px;
+          left: 425px;
         }
         .dis5 {
           position: absolute;
-          top: 612px;
-          left: 23px;
+          top: 550px;
+          left: 200px;
         }
         .dis6 {
           position: absolute;
-          top: 705px;
-          left: 54px;
+          top: 645px;
+          left: 254px;
         }
         .dis7 {
           position: absolute;
-          top: 705px;
-          left: 197px;
+          top: 645px;
+          left: 397px;
         }
         .dis8 {
           position: absolute;
-          top: 612px;
-          left: 237px;
+          top: 550px;
+          left: 437px;
         }
       }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .tokenImage {
+    width: 100%;
+    height: auto;
+  }
+  .Token_distribution_image_dis {
+    div {
+      width: 170px !important;
+      padding: 10px !important;
+      p {
+        font-size: 15px !important;
+        line-height: 20px !important;
+      }
+    }
+    .dis1 {
+      position: absolute;
+      top: 120px !important;
+      left: 20px !important;
+    }
+    .dis2 {
+      position: absolute;
+      top: 230px !important;
+      left: 65px !important;
+    }
+    .dis3 {
+      position: absolute;
+      top: 336px !important;
+      left: 20px !important;
+    }
+    .dis4 {
+      position: absolute;
+      top: 447px !important;
+      left: 110px !important;
+    }
+    .dis5 {
+      position: absolute;
+      top: 120px !important;
+      left: 73% !important;
+    }
+    .dis6 {
+      position: absolute;
+      top: 224px !important;
+      left: 78% !important;
+    }
+    .dis7 {
+      position: absolute;
+      top: 325px !important;
+      left: 80% !important;
+    }
+    .dis8 {
+      position: absolute;
+      top: 430px !important;
+      left: 66% !important;
     }
   }
 }
@@ -254,6 +311,47 @@
     .responsive_token_said,
     .responsive_token_said_dis {
       display: block;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .responsive_token_said {
+    .responsive_token_Image {
+      .responsive_token_Image_dis {
+        .dis1 {
+          top: 320px !important;
+          left: 23px !important;
+        }
+        .dis2 {
+          top: 225px !important;
+          left: 56px !important;
+        }
+        .dis3 {
+          top: 225px !important;
+          left: 199px !important;
+        }
+        .dis4 {
+          top: 320px !important;
+          left: 233px !important;
+        }
+        .dis5 {
+          top: 612px !important;
+          left: 23px !important;
+        }
+        .dis6 {
+          top: 705px !important;
+          left: 54px !important;
+        }
+        .dis7 {
+          top: 705px !important;
+          left: 197px !important;
+        }
+        .dis8 {
+          top: 612px !important;
+          left: 237px !important;
+        }
+      }
     }
   }
 }
