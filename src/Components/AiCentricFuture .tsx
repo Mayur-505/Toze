@@ -20,7 +20,10 @@ const AiCentricFuture = () => {
   };
 
   return (
-    <section className={`${styles.AiCentricFutureSec} ${styles.container}`} id="service">
+    <section
+      className={`${styles.AiCentricFutureSec} ${styles.container}`}
+      id="service"
+    >
       <div className={styles.AiCentricFutureWrapper}>
         <div className={styles.AiCentricFutureOuter}>
           <div className={styles.AiCentricFutureText}>Toze.AI</div>
@@ -49,10 +52,10 @@ const AiCentricFuture = () => {
             <div className={styles.AiCentricFutureSliderSub2}>
               <h3>Task Automation</h3>
               <p>
-                Revolutionize your workflow with TOZE.AI. Simplify repetitive
-                processes, boost productivity, and focus on what matters.
-                Experience seamless efficiency as mundane tasks are automated,
-                freeing up time for strategic initiatives.
+                Experience the future of app creation with our no-code platform.
+                No technical expertise required. Build, iterate, and launch
+                applications effortlessly. Empower your ideas and transform them
+                into reality with the simplicity of no-code app development.
               </p>
               <div className={styles.AiCentricImage}>
                 <Image src={AiCentricImage2} alt="AiCentricImage2" />
