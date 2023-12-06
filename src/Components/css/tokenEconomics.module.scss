@@ -35,6 +35,10 @@
             text-align: center;
             margin-bottom: 40px;
 
+            @media (max-width:1024px) {
+                margin-bottom: 0;
+            }
+
             @media (max-width:768px) {
                 margin-bottom: 24px;
             }
@@ -89,21 +93,34 @@
                 letter-spacing: 0.27px;
 
                 @media (max-width:768px) {
-                   text-align: left;
+                    text-align: left;
                 }
             }
         }
-        .TokenEconomicsSecInner{
-            .TokenEconomicsImg{
 
+        .TokenEconomicsSecInner {
+            .TokenEconomicsImg {
+                @media (max-width:1024px) {
+                    width: 800px;
+                    height: 700px;
+                }
+                @media (max-width:900px) {
+                    width: 650px;
+                    height: 500px;
+                }
                 @media (max-width:768px) {
+                    width: 650px;
+                    height: 500px;
+                }
+                @media (max-width:390px) {
                     display: none;
                 }
             }
-            .TokenEconomicsMobileImg{
+
+            .TokenEconomicsMobileImg {
                 display: none;
 
-                @media (max-width:768px) {
+                @media (max-width:390px) {
                     display: block;
                 }
             }

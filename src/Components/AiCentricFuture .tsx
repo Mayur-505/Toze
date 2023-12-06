@@ -20,7 +20,7 @@ const AiCentricFuture = () => {
   };
 
   return (
-    <section className={styles.AiCentricFutureSec} id="service">
+    <section className={`${styles.AiCentricFutureSec} ${styles.container}`} id="service">
       <div className={styles.AiCentricFutureWrapper}>
         <div className={styles.AiCentricFutureOuter}>
           <div className={styles.AiCentricFutureText}>Toze.AI</div>

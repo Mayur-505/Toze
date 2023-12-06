@@ -14,7 +14,7 @@
         left: 627px;
     }
 
-    @media (max-width:768px) {
+    @media (max-width:390px) {
         padding: 40px 20px;
 
         &::before{
@@ -29,13 +29,42 @@
             left: 322px;
         }
     }
+    @media (max-width:1024px) {
+        padding: 20px;
+
+        &::before{
+            content: "";
+            background-image: url('../../../public/assets/Icons/cross-mobile.svg');
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            top: -30px;
+            left: 322px;
+        }
+    }
+    @media (max-width:994px) {
+
+        &::before{
+            content: "";
+            background-image: url('../../../public/assets/Icons/cross-mobile.svg');
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            top: -0;
+            left: 450px
+        }
+    }
 
     .mainInnovation {
         position: relative;
         display: flex;
         flex-direction: column;
 
-        @media (max-width:768px) {
+        @media (max-width:390px) {
             flex-direction: row;
             width: 100%;
         }
@@ -45,17 +74,20 @@
             align-items: center;
             gap: 100px;
 
-            @media (max-width:768px) {
+            @media (max-width:390px) {
                flex-direction: column-reverse;
                 width: 100%;
                 gap: 0;
+            }
+            @media (max-width:1024px) {
+                gap: 20px;
             }
 
             .InnovationTextsec {
                 position: relative;
                 width: 50%;
 
-                @media (max-width:768px) {
+                @media (max-width:390px) {
                     margin-left: 0;
                     width: 100%;
                     margin-bottom: 24px;
@@ -74,8 +106,14 @@
                         font-size: 20px;
                         color: #4251DA;
                     }
+                    @media (max-width:1024px) {
+                        font-size: 18px;
 
-                    @media (max-width:768px) {
+                        .Innovationspan {
+                            font-size: 20px;
+                        }
+                    }
+                    @media (max-width:390px) {
                         font-size: 18px;
                         margin-bottom: 8px;
 
@@ -94,7 +132,11 @@
                     color: #18181B;
                     margin-bottom: 24px;
 
-                    @media (max-width:768px) {
+                    @media (max-width:1024px) {
+                        font-size: 40px;
+                    }
+
+                    @media (max-width:390px) {
                         font-size: 40px;
                         margin-bottom: 16px;
                     }
@@ -110,8 +152,14 @@
                     // text-align: justify;
                     width: 530px;
 
-                    @media (max-width:768px) {
-                        font-family: Roboto;
+                    @media (max-width:1024px) {
+                        font-size: 16px;
+                        text-align: justify;
+                        width: 100%;
+                    }
+
+                    @media (max-width:390px) {
+                        font-family: "Roboto";
                         font-size: 16px;
                         letter-spacing: 0em;
                         text-align: justify;
@@ -125,7 +173,20 @@
                 position: relative;
                 width: 50%;
 
+                @media (max-width:994px) {
+                   width: 600px;
+                }
+
                 @media (max-width:768px) {
+                    width: 400px;
+
+                    .InnovationImg{
+                        width: 100%;
+                        height: 293px;
+                    }
+                }
+
+                @media (max-width:390px) {
                     width: 100%;
 
                     .InnovationImg{
@@ -134,21 +195,6 @@
                     }
                 }
             }
-
-            // .InnovationMobileImgSec {
-            //     display: none;
-
-            //     @media (max-width:768px) {
-            //         // display: inline-block;
-            //         width: 100%;
-            //         height: auto;
-
-            //         .InnovationImg {
-            //             width: 100%;
-            //             height: 327px;
-            //         }
-            //     }
-            // }
         }
     }
 }

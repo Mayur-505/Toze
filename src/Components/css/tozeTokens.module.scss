@@ -13,8 +13,22 @@
         top: 15px;
         left: 627px;
     }
+    @media (max-width:1024px) {
+        padding: 20px;
 
-    @media (max-width:768px) {
+        &::before {
+            content: "";
+            background-image: url('../../../public/assets/Icons/cross-mobile.svg');
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            top: -30px;
+            left: 322px;
+        }
+    }
+    @media (max-width:390px) {
         padding: 80px 20px 40px;
 
         &::before {
@@ -35,7 +49,7 @@
         display: flex;
         flex-direction: column;
 
-        @media (max-width:768px) {
+        @media (max-width:390px) {
             flex-direction: row;
             width: 100%;
         }
@@ -45,7 +59,7 @@
             align-items: center;
             gap: 100px;
 
-            @media (max-width:768px) {
+            @media (max-width:390px) {
                 display: block;
                 width: 100%;
             }
@@ -54,7 +68,7 @@
                 position: relative;
                 width: 50%;
 
-                @media (max-width:768px) {
+                @media (max-width:390px) {
                     margin-left: 0;
                     width: 100%;
                     margin-bottom: 24px;
@@ -70,7 +84,7 @@
                     letter-spacing: 0.3px;
                     margin-bottom: 12px;
 
-                    @media (max-width:768px) {
+                    @media (max-width:390px) {
                         font-size: 18px;
                         line-height: 24px;
                         letter-spacing: 0.27px;
@@ -92,7 +106,7 @@
                     line-height: 56px;
                     margin-bottom: 24px;
 
-                    @media (max-width:768px) {
+                    @media (max-width:390px) {
                         margin-bottom: 16px;
                     }
                 }
@@ -106,7 +120,7 @@
                     line-height: 24px;
                     letter-spacing: 0.27px;
 
-                    @media (max-width:768px) {
+                    @media (max-width:390px) {
                         margin-bottom: 24px;
                     }
                 }
@@ -118,12 +132,24 @@
                 width: 50%;
 
                 .TozeTokenImg {
-                    @media (max-width:768px) {
+                    @media (max-width:390px) {
                         width: 100%;
                         height: 260px;
                     }
+                    @media (max-width:1024px) {
+                        max-width: 450px;
+                    }
+                    @media (max-width:935px) {
+                        max-width: 400px;
+                    }
+                    @media (max-width:768px) {
+                        max-width: 350px;
+                    }
+                    @media (max-width:390px) {
+                        width: 350px;
+                    }
                 }
-                @media (max-width:768px) {
+                @media (max-width:390px) {
                     width: 100%;
                 }
             }
