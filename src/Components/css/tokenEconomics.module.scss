@@ -12,8 +12,22 @@
         top: 9px;
         left: 510px;
     }
-
     @media (max-width:768px) {
+        padding: 40px 20px;
+
+        &::before {
+            content: "";
+            background-image: url('../../../public/assets/Icons/cross-mobile.svg');
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 322px;
+        }
+    }
+    @media (max-width:425px) {
         padding: 40px 20px;
 
         &::before {
@@ -28,7 +42,7 @@
             left: 322px;
         }
     }
-
+   
     .TokenEconomicsSecWrapper {
         .TokenEconomicsSecOuter {
             text-align: center;
