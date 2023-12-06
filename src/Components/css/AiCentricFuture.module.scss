@@ -1,5 +1,5 @@
 .AiCentricFutureSec {
-  padding: 100px;
+  padding: 100px 100px 100px 0;
 
   @media (max-width: 768px) {
     padding: 40px 20px;
@@ -7,16 +7,20 @@
 
   .AiCentricFutureWrapper {
     position: relative;
+
     .AiCentricFutureSlider {
       border-radius: 40px 4px 4px 40px;
       overflow: hidden;
+
       .slick-initialized {
         border-radius: 10px !important;
       }
+
       .AiCentricFutureSliderSub1 {
         background-color: #18181b;
         padding: 32px 24px 0px 24px;
         height: 704px;
+
         h3 {
           color: #fff;
           font-family: "Archivo";
@@ -26,6 +30,7 @@
           line-height: 56px;
           padding-bottom: 12px;
         }
+
         p {
           color: #e4e4e7;
           font-family: "Roboto";
@@ -35,15 +40,18 @@
           line-height: 24px;
           padding-bottom: 20px;
         }
+
         .AiCentricImage {
           margin: 0 auto;
           width: fit-content;
         }
       }
+
       .AiCentricFutureSliderSub2 {
         background-color: #fafafa;
         padding: 32px 24px 0px 24px;
         height: 704px;
+
         h3 {
           color: #27272a;
           font-family: "Archivo";
@@ -53,6 +61,7 @@
           line-height: 56px;
           padding-bottom: 12px;
         }
+
         p {
           color: #a1a1aa;
           font-family: "Roboto";
@@ -62,15 +71,18 @@
           line-height: 24px;
           padding-bottom: 20px;
         }
+
         .AiCentricImage {
           margin: 0 auto;
           width: fit-content;
         }
       }
+
       .AiCentricFutureSliderSub3 {
         background-color: #4251da;
         padding: 32px 24px 0px 24px;
         height: 704px;
+
         h3 {
           color: #fff;
           font-family: "Archivo";
@@ -80,6 +92,7 @@
           line-height: 56px;
           padding-bottom: 12px;
         }
+
         p {
           color: #e4e4e7;
           font-family: "Roboto";
@@ -89,15 +102,18 @@
           line-height: 24px;
           padding-bottom: 20px;
         }
+
         .AiCentricImage {
           margin: 0 auto;
           width: fit-content;
         }
       }
+
       .AiCentricFutureSliderSub4 {
         background-color: #4251da;
         padding: 32px 24px 0px 24px;
         height: 704px;
+
         h3 {
           color: #fff;
           font-family: "Archivo";
@@ -107,6 +123,7 @@
           line-height: 56px;
           padding-bottom: 12px;
         }
+
         p {
           color: #e4e4e7;
           font-family: "Roboto";
@@ -116,23 +133,28 @@
           line-height: 24px;
           padding-bottom: 20px;
         }
+
         .AiCentricImage {
           margin: 0 auto;
           width: fit-content;
         }
       }
     }
+
     .responsiveAiCentricFutureSlider {
       overflow: hidden;
       display: none;
+
       .slick-initialized {
         border-radius: 10px !important;
       }
+
       .AiCentricFutureSliderSub1 {
         background-color: #18181b;
         padding: 16px 16px 0px;
         height: 538px;
         overflow: hidden;
+
         h3 {
           color: #fff;
           font-family: "Archivo";
@@ -142,6 +164,7 @@
           line-height: 40px;
           padding-bottom: 8px;
         }
+
         p {
           color: #e4e4e7;
           font-family: "Roboto";
@@ -151,9 +174,11 @@
           line-height: 24px;
           padding-bottom: 16px;
         }
+
         .AiCentricImage {
           margin: 0 auto;
           width: fit-content;
+
           img {
             width: 196px;
             height: auto;
@@ -161,11 +186,13 @@
           }
         }
       }
+
       .AiCentricFutureSliderSub2 {
         background-color: #fafafa;
         padding: 16px 16px 0px;
         // height: 538px;
         overflow: hidden;
+
         h3 {
           color: #27272a;
           font-family: "Archivo";
@@ -175,6 +202,7 @@
           line-height: 40px;
           padding-bottom: 8px;
         }
+
         p {
           color: #a1a1aa;
           font-family: "Roboto";
@@ -184,9 +212,11 @@
           line-height: 24px;
           padding-bottom: 16px;
         }
+
         .AiCentricImage {
           margin: 0 auto;
           width: fit-content;
+
           img {
             width: 196px;
             height: auto;
@@ -194,11 +224,13 @@
           }
         }
       }
+
       .AiCentricFutureSliderSub3 {
         background-color: #4251da;
         padding: 16px 16px 0px;
         height: 538px;
         overflow: hidden;
+
         h3 {
           color: #fff;
           font-family: "Archivo";
@@ -208,6 +240,7 @@
           line-height: 40px;
           padding-bottom: 8px;
         }
+
         p {
           color: #e4e4e7;
           font-family: "Roboto";
@@ -217,9 +250,11 @@
           line-height: 24px;
           padding-bottom: 16px;
         }
+
         .AiCentricImage {
           margin: 0 auto;
           width: fit-content;
+
           img {
             width: 196px;
             height: auto;
@@ -227,11 +262,13 @@
           }
         }
       }
+
       .AiCentricFutureSliderSub4 {
         background-color: #fafafa;
         padding: 16px 16px 0px;
         height: 538px;
         overflow: hidden;
+
         h3 {
           color: #27272a;
           font-family: "Archivo";
@@ -241,6 +278,7 @@
           line-height: 40px;
           padding-bottom: 8px;
         }
+
         p {
           color: #a1a1aa;
           font-family: "Roboto";
@@ -250,9 +288,11 @@
           line-height: 24px;
           padding-bottom: 16px;
         }
+
         .AiCentricImage {
           margin: 0 auto;
           width: fit-content;
+
           img {
             width: 196px;
             height: auto;
@@ -260,11 +300,13 @@
           }
         }
       }
+
       .AiCentricFutureSliderSub5 {
         background-color: #18181b;
         padding: 16px 16px 0px;
         height: 538px;
         overflow: hidden;
+
         h3 {
           color: #fff;
           font-family: "Archivo";
@@ -274,6 +316,7 @@
           line-height: 40px;
           padding-bottom: 8px;
         }
+
         p {
           color: #e4e4e7;
           font-family: "Roboto";
@@ -283,9 +326,11 @@
           line-height: 24px;
           padding-bottom: 16px;
         }
+
         .AiCentricImage {
           margin: 0 auto;
           width: fit-content;
+
           img {
             width: 196px;
             height: auto;
@@ -303,7 +348,7 @@
       width: 100px;
       background-position: top center;
       background-repeat: no-repeat;
-      top: 0;
+      top: -15px;
       left: 13px;
       transform: rotate(51deg);
     }
@@ -384,6 +429,7 @@
       .AiCentricFutureSlider {
         display: none !important;
       }
+
       .responsiveAiCentricFutureSlider {
         display: flex;
         flex-direction: column;
