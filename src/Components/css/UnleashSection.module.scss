@@ -1,6 +1,16 @@
 .unleash_section_main {
   position: relative;
   padding: 40px 0px;
+
+  @media (max-width:1024px) {
+    padding: 40px 20px;
+  }
+  @media (max-width:991px) {
+    padding: 40px 20px;
+  }
+  @media (max-width:768px) {
+    padding: 40px 20px;
+  }
   .unleash_section_sub {
     display: flex;
     padding: 110px 0px;
@@ -62,6 +72,7 @@
         border: none;
         transition: all 0.3s;
         cursor: pointer !important;
+        color: #18181B;
         z-index: 3;
 
         &:hover {

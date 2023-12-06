@@ -1,5 +1,4 @@
 .TozeTokensSec {
-    // padding: 100px;
     position: relative;
 
     &::before {
@@ -64,6 +63,9 @@
             @media (max-width:425px) {
                 display: block;
                 width: 100%;
+            }
+            @media (max-width:768px) {
+                gap: 20px;
             }
 
             .TozeTokensTextsec {

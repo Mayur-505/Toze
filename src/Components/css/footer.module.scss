@@ -11,6 +11,13 @@
     gap: 100px;
     margin: 0 auto;
 
+    @media (max-width:1024px) {
+      justify-content: center;
+    }
+    @media (max-width:991px) {
+      justify-content: center;
+    }
+    
     .rightsreserved {
       position: absolute;
       bottom: 0;
