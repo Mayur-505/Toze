@@ -22,7 +22,7 @@ const Milestones = () => {
               <Image src={BoxEffect} alt="BoxEffect" />
             </span>
             <div className={styles.letSection}>
-              <li className={styles.c_timeline__item}>
+              <li className={`${styles.c_timeline__item} ${styles.AfterCircle}`}>
                 <div
                   className={`${styles.content_card_left} ${styles.content_card_right}`}
                 >
@@ -46,7 +46,7 @@ const Milestones = () => {
                   </div>
                 </div>
               </li>
-              <li className={styles.c_timeline__item}>
+              <li className={`${styles.c_timeline__item} ${styles.AfterCircle}`}>
                 <div
                   className={`${styles.content_card_left} ${styles.content_card_right}`}
                 >
@@ -69,7 +69,7 @@ const Milestones = () => {
                   </div>
                 </div>
               </li>
-              <li className={styles.c_timeline__item}>
+              <li className={`${styles.c_timeline__item} ${styles.AfterCircle}`}>
                 <div
                   className={`${styles.content_card_left} ${styles.content_card_right}`}
                 >
@@ -95,7 +95,7 @@ const Milestones = () => {
             </div>
             <div className={styles.rightSection}>
               <li
-                className={`${styles.c_timeline__item} ${styles.c_timeline__item_right}`}
+                className={`${styles.c_timeline__item} ${styles.AfterCircle} ${styles.c_timeline__item_right}`}
               >
                 <div className={`${styles.content_card_left}`}>
                   <div className={styles.content_card}>
@@ -119,7 +119,7 @@ const Milestones = () => {
                 </div>
               </li>
               <li
-                className={`${styles.c_timeline__item} ${styles.c_timeline__item_right}`}
+                className={`${styles.c_timeline__item} ${styles.AfterCircle} ${styles.c_timeline__item_right}`}
               >
                 <div className={`${styles.content_card_left}`}>
                   <div className={styles.content_card}>

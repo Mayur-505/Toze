@@ -30,7 +30,7 @@
         }
     }
 
-    @media (max-width:390px) {
+    @media (max-width:425px) {
         padding: 80px 20px 40px;
 
         &::before {
@@ -51,7 +51,7 @@
         display: flex;
         flex-direction: column;
 
-        @media (max-width:390px) {
+        @media (max-width:425px) {
             flex-direction: row;
             width: 100%;
         }
@@ -61,7 +61,7 @@
             align-items: center;
             gap: 100px;
 
-            @media (max-width:390px) {
+            @media (max-width:425px) {
                 display: block;
                 width: 100%;
             }
@@ -70,7 +70,7 @@
                 position: relative;
                 width: 50%;
 
-                @media (max-width:390px) {
+                @media (max-width:425px) {
                     margin-left: 0;
                     width: 100%;
                     margin-bottom: 24px;
@@ -86,7 +86,7 @@
                     letter-spacing: 0.3px;
                     margin-bottom: 12px;
 
-                    @media (max-width:390px) {
+                    @media (max-width:425px) {
                         font-size: 18px;
                         line-height: 24px;
                         letter-spacing: 0.27px;
@@ -108,7 +108,7 @@
                     line-height: 56px;
                     margin-bottom: 24px;
 
-                    @media (max-width:390px) {
+                    @media (max-width:425px) {
                         margin-bottom: 16px;
                     }
                 }
@@ -122,7 +122,7 @@
                     line-height: 24px;
                     letter-spacing: 0.27px;
 
-                    @media (max-width:390px) {
+                    @media (max-width:425px) {
                         margin-bottom: 24px;
                     }
                 }
@@ -135,7 +135,7 @@
 
                 .TozeTokenImg {
                     width: 100%;
-                    @media (max-width:390px) {
+                    @media (max-width:425px) {
                         width: 100%;
                         height: 260px;
                     }
@@ -152,12 +152,12 @@
                         max-width: 350px;
                     }
 
-                    @media (max-width:390px) {
+                    @media (max-width:425px) {
                         width: 350px;
                     }
                 }
 
-                @media (max-width:390px) {
+                @media (max-width:425px) {
                     width: 100%;
                 }
             }
