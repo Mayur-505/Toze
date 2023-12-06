@@ -16,19 +16,29 @@ function Footer() {
           <div className={styles.quick_link_div}>
             <div>
               <h2>QUICK LINKS</h2>
-              <div>
-                <p>About us</p>
-                <p>Service</p>
-                <p>Plan</p>
-                <p>Token</p>
-                <p>Roadmap</p>
-              </div>
+              <ul>
+                <li>
+                  <a href="">About us</a>
+                </li>
+                <li>
+                  <a href="#service">Service</a>
+                </li>
+                <li>
+                  <a href="#plan">Plan</a>
+                </li>
+                <li>
+                  <a href="#token">Token</a>
+                </li>
+                <li>
+                  <a href="#roadmap">Roadmap</a>
+                </li>
+              </ul>
             </div>
             <div className={styles.contact_us_div}>
               <h2>CONTACT US</h2>
-              <div>
-                <p>Help@toze.ai</p>
-              </div>
+              <ul>
+                <li>Help@toze.ai</li>
+              </ul>
             </div>
           </div>
           <div className={styles.connect_with_us_div}>

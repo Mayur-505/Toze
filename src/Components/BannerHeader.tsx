@@ -13,7 +13,7 @@ const BannerHeader = () => {
     setMenuOpen((prevMenuState) => !prevMenuState);
   };
 
-  const handleOutsideClick = (e:any) => {
+  const handleOutsideClick = (e: any) => {
     if (menuRef.current && !menuRef.current.contains(e.target)) {
       setMenuOpen(false);
     }

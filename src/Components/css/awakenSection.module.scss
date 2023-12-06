@@ -24,13 +24,10 @@
     width: 50%;
     height: 840px;
     .awaken_titles {
+      padding: 184px 100px;
       .aiLoworcase {
         text-transform: uppercase;
       }
-      position: absolute;
-      top: 184px;
-      left: 100px;
-      max-width: 570px;
       h1 {
         color: #27272a;
         font-family: "Archivo";
@@ -143,6 +140,44 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .awaken_sub_div1 {
+    width: 60% !important;
+    .awaken_titles {
+      padding: 150px 50px !important;
+      .aiLoworcase {
+      }
+      h1 {
+        font-size: 50px !important;
+        line-height: 60px !important;
+      }
+      p {
+        font-size: 13px !important;
+      }
+      .Whitepaper {
+        button {
+        }
+        button:first-child {
+        }
+      }
+      .download_wallet {
+        p {
+        }
+      }
+    }
+  }
+  .awaken_sub_div2 {
+    width: 40% !important;
+    .awaken_aiAgents_div {
+      width: 100% !important;
+      height: 600px !important;
+      .awaken_aiAgents_point {
+        height: auto !important;
+        width: 360px !important;
+      }
+    }
+  }
+}
 
 @media (max-width: 768px) {
   .awaken_sub_div2 {
@@ -168,13 +203,10 @@
       width: 100% !important;
       height: 560px !important;
       .awaken_titles {
+        padding: 145px 20px !important;
         .aiLoworcase {
           text-transform: lowercase;
         }
-        max-width: 350px;
-        width: 350px;
-        top: 154px;
-        left: 20px;
         h1 {
           font-size: 48px;
           text-align: center;
