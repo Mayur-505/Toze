@@ -2,6 +2,7 @@
   height: 448px;
   display: block;
   position: relative;
+
   .footer_sub_div {
     position: relative;
     width: 1240px;
@@ -10,11 +11,13 @@
     display: flex;
     gap: 100px;
     margin: 0 auto;
+
     .rightsreserved {
       position: absolute;
       bottom: 0;
       left: 50%;
       transform: translate(-50%, 0%);
+
       p {
         color: #a1a1aa;
         font-family: "Inter";
@@ -25,6 +28,7 @@
       }
     }
   }
+
   h2 {
     color: #4251da;
     font-family: "Roboto";
@@ -35,9 +39,9 @@
     letter-spacing: 0.3px;
     padding-bottom: 20px;
   }
+
   li {
     color: #52525b;
-    text-align: center;
     padding-bottom: 20px;
     font-family: "Roboto";
     list-style: none;
@@ -48,6 +52,7 @@
     letter-spacing: 0.72px;
     cursor: pointer;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -60,15 +65,18 @@
     background-size: cover;
     pointer-events: none;
   }
+
   .logo_Image {
     width: 243px;
     height: 56px;
+
     img {
       width: 100%;
       height: 100%;
       cursor: pointer;
     }
   }
+
   .connect_with_us_div {
     .ImageLogos {
       text-align: left;
@@ -76,21 +84,25 @@
       gap: 15px;
     }
   }
+
   .quick_link_div {
     display: flex;
     gap: 50px;
   }
 }
+
 .footer_responsive_div {
   height: 550px;
   padding: 80px 20px;
   position: relative;
   display: none;
+
   .rightsreserved {
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translate(-50%, 0%);
+
     p {
       color: #a1a1aa;
       font-family: "Inter";
@@ -101,13 +113,16 @@
       width: 217px;
     }
   }
+
   .quick_links_flex {
     display: flex;
     gap: 60px;
+
     .contact_us_flex {
       display: flex;
       flex-direction: column;
       gap: 48px;
+
       .connect_with_us_div {
         .ImageLogos {
           display: flex;
@@ -116,6 +131,7 @@
       }
     }
   }
+
   h2 {
     color: #4251da;
     font-family: "Roboto";
@@ -126,6 +142,7 @@
     letter-spacing: 0.3px;
     padding-bottom: 20px;
   }
+
   p {
     color: #52525b;
     padding-bottom: 16px;
@@ -136,17 +153,20 @@
     line-height: 28px;
     letter-spacing: 0.72px;
   }
+
   .logo_Image {
     width: 190px;
     height: 48px;
     margin: 0 auto;
     margin-bottom: 60px;
+
     img {
       width: 100%;
       height: 100%;
       cursor: pointer;
     }
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -164,6 +184,7 @@
   .footer_responsive_div {
     display: block;
   }
+
   .footer_main_div {
     display: none;
   }

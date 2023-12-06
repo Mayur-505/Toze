@@ -20,10 +20,8 @@ const BannerHeader = () => {
   };
 
   React.useEffect(() => {
-    // Attach event listener when the component mounts
     document.addEventListener("mousedown", handleOutsideClick);
-
-    // Detach event listener when the component unmounts
+    
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };

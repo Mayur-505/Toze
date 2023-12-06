@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './css/tozeTokens.module.scss'
 import Image from 'next/image'
 import TozeTokenImg from '../../public/assets/Images/tozetokens.svg'
-import mobileTozeTokensImg from '../../public/assets/Images/tozetokens-mobile.svg'
 
 const TozeTokens = () => {
     return (
