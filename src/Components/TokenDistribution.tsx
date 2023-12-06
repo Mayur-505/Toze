@@ -7,7 +7,7 @@ import responsiveTokenmainImage from "../../public/assets/Icons/responsiveTokenm
 
 function TokenDistribution() {
   return (
-    <div className={styles.Token_distribution_main} id="token">
+    <div className={`container ${styles.Token_distribution_main}`} id="token">
       <div className={styles.Token_distribution_sub}>
         <div className={styles.Token_distribution_title}>
           <h3>

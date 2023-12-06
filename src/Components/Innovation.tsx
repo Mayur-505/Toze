@@ -5,7 +5,7 @@ import InnovationImg from '../../public/assets/Images/innovation.svg'
 
 const Innovation = () => {
     return (
-        <section className={styles.InnovationSec}>
+        <section className={`container ${styles.InnovationSec}`}>
             <div className={styles.mainInnovation}>
                 <div className={styles.InnovationInner}>
                     <div className={styles.InnovationImgSec}>

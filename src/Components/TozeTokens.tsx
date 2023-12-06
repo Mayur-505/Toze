@@ -5,7 +5,7 @@ import TozeTokenImg from '../../public/assets/Images/tozetokens.svg'
 
 const TozeTokens = () => {
     return (
-        <section className={styles.TozeTokensSec}>
+        <section className={`container ${styles.TozeTokensSec}`}>
             <div className={styles.mainTozeTokens}>
                 <div className={styles.TozeTokensInner}>
                     <div className={styles.TozeTokensTextsec}>

@@ -6,7 +6,7 @@ import BoxEffect from "../../public/assets/Images/boxEffect.svg";
 
 const Milestones = () => {
   return (
-    <section className={styles.MilestonesSec} id="roadmap">
+    <section className={`container  ${styles.MilestonesSec}`} id="roadmap">
       <div className={styles.MilestonesMain}>
         <div className={styles.MilestonesTextInner}>
           <h3 className={styles.MilestonesText}>Milestones</h3>
