@@ -4,6 +4,7 @@ import styles from "./css/bannerHeader.module.scss";
 import logoIcon from "../../public/assets/Icons/logo.svg";
 import sidebarIcon from "../../public/assets/Icons/sidebarIcon.svg";
 import Image from "next/image";
+import { log } from "console";
 
 const BannerHeader = () => {
   const [isMenuOpen, setMenuOpen] = React.useState(false);
@@ -21,7 +22,7 @@ const BannerHeader = () => {
 
   React.useEffect(() => {
     document.addEventListener("mousedown", handleOutsideClick);
-    
+
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
@@ -30,12 +31,12 @@ const BannerHeader = () => {
   return (
     <div className={styles.awaken_main_section}>
       <div className={styles.awaken_header}>
-        <nav className={styles.nav}>
+        <nav className={styles.nav}  ref={menuRef}>
           <div className={styles.logo}>
             <Image src={logoIcon} alt="logoIcon" />
           </div>
           <div
-            ref={menuRef}
+            // ref={menuRef}
             className={`${styles.menu} ${isMenuOpen ? styles.open : ""}`}
           >
             <ul>
