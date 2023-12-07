@@ -11,6 +11,7 @@ import Footer from "@/Components/Footer";
 import BannerHeader from "@/Components/BannerHeader";
 import AwakenSection from "@/Components/AwakenSection";
 import TokenDistribution from "@/Components/TokenDistribution";
+import DownloadWallet from "@/Components/DownloadWallet";
 
 export default function Home() {
   return (
@@ -20,9 +21,10 @@ export default function Home() {
       <Innovation />
       <AiCentricFuture />
       <TozeTokens />
-      <TokenEconomics />
       <TokenDistribution />
+      <TokenEconomics />
       <Milestones />
+      <DownloadWallet />
       <UnleashSection />
       <Footer />
     </main>

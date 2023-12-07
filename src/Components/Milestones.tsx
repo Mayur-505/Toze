@@ -22,7 +22,9 @@ const Milestones = () => {
               <Image src={BoxEffect} alt="BoxEffect" />
             </span>
             <div className={styles.letSection}>
-              <li className={`${styles.c_timeline__item} ${styles.AfterCircle}`}>
+              <li
+                className={`${styles.c_timeline__item} ${styles.AfterCircle}`}
+              >
                 <div
                   className={`${styles.content_card_left} ${styles.content_card_right}`}
                 >
@@ -46,7 +48,9 @@ const Milestones = () => {
                   </div>
                 </div>
               </li>
-              <li className={`${styles.c_timeline__item} ${styles.AfterCircle}`}>
+              <li
+                className={`${styles.c_timeline__item} ${styles.AfterCircle}`}
+              >
                 <div
                   className={`${styles.content_card_left} ${styles.content_card_right}`}
                 >
@@ -69,12 +73,14 @@ const Milestones = () => {
                   </div>
                 </div>
               </li>
-              <li className={`${styles.c_timeline__item} ${styles.AfterCircle}`}>
+              <li
+                className={`${styles.c_timeline__item} ${styles.AfterCircle}`}
+              >
                 <div
                   className={`${styles.content_card_left} ${styles.content_card_right}`}
                 >
                   <div className={styles.content_card}>
-                    <h3 className={styles.c_timeline__title}>2024 2Q</h3>
+                    <h3 className={styles.c_timeline__title}>2024 4Q</h3>
                     <ul className={styles.c_timeline__desc}>
                       <li>Continuous innovation</li>
                       <li>Release governance mechanisms</li>
@@ -123,7 +129,7 @@ const Milestones = () => {
               >
                 <div className={`${styles.content_card_left}`}>
                   <div className={styles.content_card}>
-                    <h3 className={styles.c_timeline__title}>2024 1Q</h3>
+                    <h3 className={styles.c_timeline__title}>2024 3Q</h3>
                     <ul className={styles.c_timeline__desc}>
                       <li>Enhance AI capabilities</li>
                       <li>Introduce staking mechanisms</li>
@@ -158,9 +164,9 @@ const Milestones = () => {
                 <div className={styles.content_card}>
                   <h3 className={styles.c_timeline__title}>2023 4Q</h3>
                   <ul className={styles.c_timeline__desc}>
-                    <li>White paper 1.0</li>
-                    <li>Toze.AI wallet release</li>
-                    <li>Toze.AI beta Development</li>
+                    <li>Whitepaper 1.0</li>
+                    <li>Imperial Assets Wallet release</li>
+                    <li>Imperial Assets Platform Development</li>
                     <li>Private Sale</li>
                   </ul>
                 </div>
@@ -180,7 +186,7 @@ const Milestones = () => {
             <li className={styles.c_timeline__item}>
               <div className={styles.content_card_left}>
                 <div className={styles.content_card}>
-                  <h3 className={styles.c_timeline__title}>2024 4Q</h3>
+                  <h3 className={styles.c_timeline__title}>2024 1Q</h3>
                   <ul className={styles.c_timeline__desc}>
                     <li>Imperial Assets beta launch</li>
                     <li>Listing at global Exchange</li>
@@ -202,7 +208,7 @@ const Milestones = () => {
             <li className={styles.c_timeline__item}>
               <div className={styles.content_card_left}>
                 <div className={styles.content_card}>
-                  <h3 className={styles.c_timeline__title}>2024 4Q</h3>
+                  <h3 className={styles.c_timeline__title}>2024 2Q</h3>
                   <ul className={styles.c_timeline__desc}>
                     <li>Enhance security measures</li>
                     <li>Introduce staking mechanisms</li>
@@ -224,7 +230,7 @@ const Milestones = () => {
             <li className={styles.c_timeline__item}>
               <div className={styles.content_card_left}>
                 <div className={styles.content_card}>
-                  <h3 className={styles.c_timeline__title}>2024 4Q</h3>
+                  <h3 className={styles.c_timeline__title}>2024 3Q</h3>
                   <ul className={styles.c_timeline__desc}>
                     <li>Enhance security measures</li>
                     <li>Introduce staking mechanisms</li>

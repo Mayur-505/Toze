@@ -65,7 +65,7 @@
         display: flex;
         gap: 8px;
         padding: 40px 0px 8px 0px;
-        button {
+        .white_paper_btn {
           border-radius: 12px;
           background: #e4e4e7;
           padding: 10px 24px;
@@ -79,13 +79,13 @@
           letter-spacing: 0.24px;
           transition: all 0.3s;
           cursor: pointer;
-          color: #18181B;
+          color: #18181b;
 
           &:hover {
             background: #e4e4e793;
           }
         }
-        button:first-child {
+        .white_paper_btn:first-child {
           background: #4251da;
           color: #fff;
           &:hover {
@@ -225,7 +225,7 @@
           padding: 44px 0px 0px 8px;
           justify-content: center;
           gap: 16px;
-          button {
+          .white_paper_btn {
             width: 167px;
             font-size: 15px;
           }

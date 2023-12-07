@@ -1,0 +1,111 @@
+.DownloadWalletSec {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  .downloadWalletMain {
+    margin: 57px 0 17px 0;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -65px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      background: url("../../../public/assets//Icons/cross.svg") no-repeat;
+      transform: rotate(30deg);
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      top: -100px;
+      left: 85px;
+      width: 40px;
+      height: 40px;
+      background: url("../../../public/assets//Icons/Star.svg") no-repeat;
+    }
+
+    .downloadCardWrapper {
+      border-radius: 40px;
+      width: 700px;
+      margin: auto;
+      padding: 3px;
+      background: linear-gradient(
+        270deg,
+        rgba(189, 192, 241, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      position: relative;
+      z-index: 5;
+
+      .circle {
+        position: absolute;
+        top: -67px;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #7d89e7;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: -30px;
+        right: -19px;
+        width: 108px;
+        height: 108px;
+        border-radius: 50%;
+        background: #c8cbf5;
+        z-index: -1;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -67px;
+        left: -9px;
+        width: 192px;
+        height: 192px;
+        border-radius: 50%;
+        background: #c8cbf5;
+        z-index: -1;
+      }
+
+      .downloadCard {
+        border-radius: 40px;
+        padding: 40px;
+        text-align: center;
+        background: #4251da;
+        position: relative;
+
+        .title {
+          color: #fff;
+          font-family: Archivo;
+          font-size: 56px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 64px;
+          margin-bottom: 16px;
+        }
+        .description {
+          color: #fff;
+          font-family: Roboto;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.27px;
+          margin-bottom: 36px;
+        }
+        .downloadBtn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+        }
+      }
+    }
+  }
+}

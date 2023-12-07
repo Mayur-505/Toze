@@ -2,13 +2,13 @@
   position: relative;
   padding: 40px 0px;
 
-  @media (max-width:1024px) {
+  @media (max-width: 1024px) {
     padding: 40px 20px;
   }
-  @media (max-width:991px) {
+  @media (max-width: 991px) {
     padding: 40px 20px;
   }
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     padding: 40px 20px;
   }
   .unleash_section_sub {
@@ -72,12 +72,17 @@
         border: none;
         transition: all 0.3s;
         cursor: pointer !important;
-        color: #18181B;
+        color: #18181b;
         z-index: 3;
 
         &:hover {
           background: #e4e4e7be;
         }
+      }
+
+      .downloadBtn {
+        display: none;
+        gap: 16px;
       }
     }
   }
@@ -102,11 +107,25 @@
         bottom: 30px;
       }
       .unleash_section_dis {
+        gap: 32px;
         h2 {
           width: 310px;
           font-size: 48px;
           font-weight: 500;
           line-height: 56px;
+        }
+        button {
+          display: none;
+        }
+        .downloadBtn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .downloadIcons {
+            width: auto;
+            height: 40px;
+          }
         }
       }
     }

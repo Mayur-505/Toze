@@ -31,7 +31,7 @@ const BannerHeader = () => {
   return (
     <div className={styles.awaken_main_section}>
       <div className={styles.awaken_header}>
-        <nav className={styles.nav}  ref={menuRef}>
+        <nav className={styles.nav} ref={menuRef}>
           <div className={styles.logo}>
             <Image src={logoIcon} alt="logoIcon" />
           </div>
@@ -47,10 +47,10 @@ const BannerHeader = () => {
                 <a href="#service">Service</a>
               </li>
               <li onClick={handleMenuToggle}>
-                <a href="#plan">Plan</a>
+                <a href="#token">Token</a>
               </li>
               <li onClick={handleMenuToggle}>
-                <a href="#token">Token</a>
+                <a href="#plan">Plan</a>
               </li>
               <li onClick={handleMenuToggle}>
                 <a href="#roadmap">Roadmap</a>

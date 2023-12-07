@@ -8,7 +8,6 @@ import bannerCircleImagemobile from "../../public/assets/Icons/bannerCircle-mobi
 import Image from "next/image";
 
 function AwakenSection() {
-  
   return (
     <div className={styles.awaken_main_section} id="about-us">
       <Image
@@ -34,8 +33,15 @@ function AwakenSection() {
             transformative capabilities of artificial intelligence.
           </p>
           <div className={styles.Whitepaper}>
-            <button>Whitepaper 1.00</button>
-            <button>Buy TOZE</button>
+            <a
+              href="https://drive.google.com/file/d/1f9Ug_t-9YdiM5QVx0B8dBKlsaibMyV88/view?usp=drive_link"
+              target="_black"
+              rel="noopener noreferrer"
+              className={styles.white_paper_btn}
+            >
+              Whitepaper 1.00
+            </a>
+            <button className={styles.white_paper_btn}>Buy TOZE</button>
           </div>
           <div className={styles.download_wallet}>
             <Image src={downArrow} alt="downArrow" />
