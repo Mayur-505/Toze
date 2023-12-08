@@ -11,7 +11,7 @@ function TokenDistribution() {
     if (typeof window !== "undefined") {
       return window.innerWidth;
     }
-    return null;
+    return 400;
   });
 
   useEffect(() => {
