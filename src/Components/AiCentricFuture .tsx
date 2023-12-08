@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./css/AiCentricFuture.module.scss";
 import Slider from "react-slick";
 import AiCentricImage1 from "../../public/assets/Icons/AiCentricImage1.svg";
@@ -8,14 +8,34 @@ import AiCentricImage3 from "../../public/assets/Icons/AiCentricImage3.svg";
 import AiCentricImage4 from "../../public/assets/Icons/AiCentricImage4.svg";
 import AiCentricImage5 from "../../public/assets/Icons/AiCentricImage5.svg";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 
 const AiCentricFuture = () => {
+  // useInView returns a boolean value 'inView' indicating whether the target is in the viewport
+  const [ref, inView] = useInView({
+    rootMargin: "0px 0px -200px 0px", // adjust root margin as needed
+  });
+
+  const sliderRef = useRef<any>(null);
+
+  const moveToSlide = (slideIndex: number) => {
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(slideIndex);
+    }
+  };
+
+  useEffect(() => {
+    if (!inView) {
+      moveToSlide(0);
+    }
+  }, [inView]);
+
   const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 2,
-    autoplay: true,
+    autoplay: inView,
     speed: 2000,
     autoplaySpeed: 500,
     style: { borderRadius: "100px" },
@@ -25,6 +45,7 @@ const AiCentricFuture = () => {
     <section
       className={`${styles.AiCentricFutureSec} ${styles.container}`}
       id="service"
+      ref={ref}
     >
       <div className={styles.AiCentricFutureWrapper}>
         <div className={styles.AiCentricFutureOuter}>
@@ -40,7 +61,7 @@ const AiCentricFuture = () => {
           </div>
         </div>
         <div className={styles.AiCentricFutureSlider}>
-          <Slider {...settings}>
+          <Slider key={inView ? 1 : 0} ref={sliderRef} {...settings}>
             <div className={styles.AiCentricFutureSliderSub1}>
               <h3>No-Code App Development</h3>
               <p>

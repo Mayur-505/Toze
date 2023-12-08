@@ -34,7 +34,7 @@ function AwakenSection() {
           </p>
           <div className={styles.Whitepaper}>
             <a
-              href="https://drive.google.com/file/d/1f9Ug_t-9YdiM5QVx0B8dBKlsaibMyV88/view?usp=drive_link"
+              href="https://toze.gitbook.io/whitepaper"
               target="_black"
               rel="noopener noreferrer"
               className={styles.white_paper_btn}
@@ -45,7 +45,7 @@ function AwakenSection() {
           </div>
           <div className={styles.download_wallet}>
             <Image src={downArrow} alt="downArrow" />
-            <p>Download wallet ios + android button</p>
+            <a href="#downloadWallet">Download wallet ios + android button</a>
           </div>
         </div>
       </div>

@@ -1,132 +1,136 @@
 .TokenEconomicsSec {
-    position: relative;
-    padding: 60px 0;
+  position: relative;
+  padding: 100px 0;
+
+  &::before {
+    content: "";
+    background-image: url("../../../public/assets/Icons/cross.svg");
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 608px;
+  }
+  @media (max-width: 1024px) {
+    padding: 40px 20px;
+  }
+  @media (max-width: 768px) {
+    padding: 40px 20px;
 
     &::before {
-        content: '';
-        background-image: url('../../../public/assets/Icons/cross.svg');
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        background-position: top center;
-        background-repeat: no-repeat;
-        top: -35px;
-        left: 608px;
+      content: "";
+      background-image: url("../../../public/assets/Icons/cross-mobile.svg");
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      background-position: top center;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 322px;
+      z-index: -1;
     }
-    @media (max-width:1024px) {
-        padding: 40px 20px;
+  }
+  @media (max-width: 576px) {
+    padding: 40px 20px;
+
+    &::before {
+      content: "";
+      background-image: url("../../../public/assets/Icons/cross-mobile.svg");
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      background-position: top center;
+      background-repeat: no-repeat;
+      top: 84px;
+      right: 20px;
+      left: unset;
     }
-    @media (max-width:768px) {
-        padding: 40px 20px;
+  }
 
-        &::before {
-            content: "";
-            background-image: url('../../../public/assets/Icons/cross-mobile.svg');
-            position: absolute;
-            height: 50px;
-            width: 50px;
-            background-position: top center;
-            background-repeat: no-repeat;
-            top: 0;
-            left: 322px;
-        }
-    }
-    @media (max-width:425px) {
-        padding: 40px 20px;
+  .TokenEconomicsSecWrapper {
+    .TokenEconomicsSecOuter {
+      text-align: center;
+      margin-bottom: 40px;
 
-        &::before {
-            content: "";
-            background-image: url('../../../public/assets/Icons/cross-mobile.svg');
-            position: absolute;
-            height: 50px;
-            width: 50px;
-            background-position: top center;
-            background-repeat: no-repeat;
-            top: 94px;
-            left: 322px;
-        }
-    }
-   
-    .TokenEconomicsSecWrapper {
-        .TokenEconomicsSecOuter {
-            text-align: center;
-            margin-bottom: 40px;
+      @media (max-width: 768px) {
+        margin-bottom: 24px;
+      }
 
-            @media (max-width:768px) {
-                margin-bottom: 24px;
-            }
+      .TokenEconomicsTitle {
+        color: #4251da;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        margin-bottom: 12px;
 
-            .TokenEconomicsTitle {
-                color: #4251DA;
-                font-family: "Roboto";
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 28px;
-                letter-spacing: 0.3px;
-                margin-bottom: 12px;
-
-                @media (max-width:768px) {
-                    font-size: 18px;
-                    line-height: 24px;
-                    letter-spacing: 0.27px;
-                    text-align: justify;
-                    margin-bottom: 8px;
-                }
-
-                .span {
-                    color: #A1A1AA;
-                }
-            }
-
-            .TokenEconomicsText {
-                color: #18181B;
-                text-align: center;
-                font-family: "Archivo";
-                font-size: 48px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 56px;
-                margin-bottom: 24px;
-
-                @media (max-width:768px) {
-                    text-align: left;
-                    margin-bottom: 16px;
-                }
-            }
-
-            .TokenEconomicsSubText {
-                color: #A1A1AA;
-                text-align: center;
-                font-family: "Roboto";
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
-                letter-spacing: 0.27px;
-
-                @media (max-width:768px) {
-                    text-align: left;
-                }
-            }
+        @media (max-width: 768px) {
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.27px;
+          text-align: left;
+          margin-bottom: 8px;
         }
 
-        .TokenEconomicsSecInner {
-            .TokenEconomicsImg {
-                width: 100%;
-                height: 100%;
-                @media (max-width:425px) {
-                    display: none;
-                }
-            }
-
-            .TokenEconomicsMobileImg {
-                display: none;
-
-                @media (max-width:425px) {
-                    display: block;
-                }
-            }
+        .span {
+          color: #a1a1aa;
         }
+      }
+
+      .TokenEconomicsText {
+        color: #18181b;
+        text-align: center;
+        font-family: "Archivo";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 56px;
+        margin-bottom: 24px;
+
+        @media (max-width: 768px) {
+          text-align: left;
+          margin-bottom: 16px;
+        }
+      }
+
+      .TokenEconomicsSubText {
+        color: #a1a1aa;
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.27px;
+
+        @media (max-width: 768px) {
+          text-align: left;
+        }
+      }
     }
+
+    .TokenEconomicsSecInner {
+      .TokenEconomicsImg {
+        width: 100%;
+        height: 100%;
+        @media (max-width: 576px) {
+          display: none;
+        }
+      }
+
+      .TokenEconomicsMobileImg {
+        display: none;
+
+        @media (max-width: 576px) {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
 }

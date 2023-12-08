@@ -6,7 +6,7 @@ import TokenEconomicsMobileImg from "../../public/assets/Images/TokenEconomics-m
 
 const TokenEconomics = () => {
   return (
-    <section className={`${styles.TokenEconomicsSec}`} id="plan">
+    <section className={`container ${styles.TokenEconomicsSec}`} id="plan">
       <div className={styles.TokenEconomicsSecWrapper}>
         <div className={styles.TokenEconomicsSecOuter}>
           <div className={styles.TokenEconomicsTitle}>

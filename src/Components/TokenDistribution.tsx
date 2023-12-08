@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import styles from "./css/tokenDistribution.module.scss";
 import Image from "next/image";
 import tokenImage from "../../public/assets/Icons/tokenDistribution.svg";
@@ -6,8 +7,31 @@ import tokensubImage from "../../public/assets/Icons/tozeAiLines.svg";
 import responsiveTokenmainImage from "../../public/assets/Icons/responsiveTokenmainImage.svg";
 
 function TokenDistribution() {
+  const [windowWidth, setWindowWidth] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth;
+    }
+    return null;
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  console.log("windowWidth", windowWidth);
+
   return (
-    <div className={`container ${styles.Token_distribution_main}`} id="token">
+    <div className={`container ${styles.Token_distribution_main}`}>
       <div className={styles.Token_distribution_sub}>
         <div className={styles.Token_distribution_title}>
           <h3>
@@ -84,19 +108,26 @@ function TokenDistribution() {
             <Image
               src={responsiveTokenmainImage}
               alt="responsiveTokenmainImage"
+              className={styles.tokenmainImage}
             />
             <div className={styles.responsive_token_Image_dis}>
               <div className={styles.dis1}>
                 <p>
-                  Ecosystem Fund (20%) <br /> 200M TOZE
+                  Public Sale (15%) <br /> 150M TOZE
                 </p>
               </div>
-              <div className={styles.dis2}>
+              <div
+                className={styles.dis2}
+                style={{ left: `${windowWidth / 2 - 169}px` }}
+              >
                 <p>
                   Staking and Rewards (15%) <br /> 150M TOZE
                 </p>
               </div>
-              <div className={styles.dis3}>
+              <div
+                className={styles.dis3}
+                style={{ left: `${windowWidth / 2 - 5}px` }}
+              >
                 <p>
                   Staking and Rewards (15%) <br />
                   150M TOZE
@@ -107,12 +138,18 @@ function TokenDistribution() {
                   Public Sale <br /> (15%) <br /> 150M TOZE
                 </p>
               </div>
-              <div className={styles.dis5}>
+              <div
+                className={styles.dis5}
+                style={{ left: `${windowWidth / 2 - 169}px` }}
+              >
                 <p>
                   Team and Advisors (10%) <br /> 100M TOZE
                 </p>
               </div>
-              <div className={styles.dis6}>
+              <div
+                className={styles.dis6}
+                style={{ left: `${windowWidth / 2 - 5}px` }}
+              >
                 <p>
                   Platform Reserve (5%) <br />
                   50M TOZE
