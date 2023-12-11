@@ -52,18 +52,17 @@ function TokenDistribution() {
           <div className={styles.Token_distribution_image_dis}>
             <div className={styles.dis1}>
               <p>
-                Ecosystem Fund (20%) <br /> 200M TOZE
+                Pre & Private Sale (25%) <br /> 250M TOZE
               </p>
             </div>
             <div className={styles.dis2}>
               <p>
-                Staking and Rewards (15%) <br /> 150M TOZE
+                Ecosystme Fund (20%) <br /> 200M TOZE
               </p>
             </div>
             <div className={styles.dis3}>
               <p>
-                Staking and Rewards (15%) <br />
-                150M TOZE
+                Staking and Rewards (15%) <br /> 150M TOZE
               </p>
             </div>
             <div className={styles.dis4}>
@@ -73,23 +72,22 @@ function TokenDistribution() {
             </div>
             <div className={styles.dis5}>
               <p>
-                Team and Advisors (10%) <br /> 100M TOZE
+                Token Burning Mechanism (5%) <br /> 50M TOZE
               </p>
             </div>
             <div className={styles.dis6}>
               <p>
-                Platform Reserve (5%) <br />
-                50M TOZE
+                Initial Users and Airdrops (5%) <br /> 50M TOZE
               </p>
             </div>
             <div className={styles.dis7}>
               <p>
-                Initial Users and Airdrops (5%) <br /> 50M TOZE
+                Platform Reserve (5%) <br /> 50M TOZE
               </p>
             </div>
             <div className={styles.dis8}>
               <p>
-                Token Burning Mechanism (5%) <br /> 50M TOZE
+                Team and Advisors (10%) <br /> 100M TOZE                
               </p>
             </div>
           </div>
@@ -151,18 +149,17 @@ function TokenDistribution() {
                 style={{ left: `${windowWidth / 2 - 5}px` }}
               >
                 <p>
-                  Platform Reserve (5%) <br />
-                  50M TOZE
+                  Platform Reserve (5%) <br /> 50M TOZE
                 </p>
               </div>
               <div className={styles.dis7}>
                 <p>
-                  Initial Users and Airdrops (5%) <br /> 50M TOZE
+                  Ecosystem Fund (20%) <br /> 200M TOZE 
                 </p>
               </div>
               <div className={styles.dis8}>
                 <p>
-                  Token Burning Mechanism (5%) <br /> 50M TOZE
+                Team and Advisors (10%) <br /> 100M TOZE
                 </p>
               </div>
             </div>
