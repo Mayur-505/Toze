@@ -105,7 +105,11 @@
       .InnovationTextsec {
         position: relative;
         width: 50%;
+        margin-left: 76px;
 
+        @media (max-width: 768px) {
+          margin: 0;
+        }
         @media (max-width: 425px) {
           margin-left: 0;
           width: 100%;
