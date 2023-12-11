@@ -33,7 +33,7 @@ const AiCentricFuture = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 2,
     autoplay: inView,
@@ -63,7 +63,7 @@ const AiCentricFuture = () => {
         </div>
         <div className={styles.AiCentricFutureSlider}>
           <Slider key={inView ? 1 : 0} ref={sliderRef} {...settings}>
-            <div className={styles.AiCentricFutureSliderSub1}>
+            <div className={`${styles.AiCentricFutureSliderSub1} ${styles.AiCentricFutureSlide1}`}>
               <h3>No-Code App Development</h3>
               <p>
                 Experience the future of app creation with our no-code platform.
@@ -111,7 +111,7 @@ const AiCentricFuture = () => {
                 <Image src={AiCentricImage4} alt="AiCentricImage4" className={styles.CentricImage} />
               </div>
             </div>
-            <div className={styles.AiCentricFutureSliderSub1}>
+            <div className={`${styles.AiCentricFutureSliderSub1} ${styles.AiCentricFutureSlider2}`}>
               <h3>Personalized Assistant</h3>
               <p>
                 The personalized AI assistant generates app ideas and templates,

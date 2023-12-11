@@ -9,7 +9,7 @@
     position: relative;
 
     .AiCentricFutureSlider {
-      border-radius: 40px 4px 4px 40px;
+      // border-radius: 40px 4px 4px 40px;
       overflow: hidden;
 
       .slick-initialized {
@@ -20,6 +20,11 @@
         background-color: #18181b;
         padding: 32px 24px 0px 24px;
         height: 704px;
+
+        &.AiCentricFutureSlide1{
+          border-top-left-radius: 40px;
+          border-bottom-left-radius: 40px;
+        }
 
         h3 {
           color: #fff;
@@ -49,6 +54,11 @@
             height: 100%;
           }
         }
+      }
+
+      .AiCentricFutureSlider2{
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
       }
 
       .AiCentricFutureSliderSub2 {
