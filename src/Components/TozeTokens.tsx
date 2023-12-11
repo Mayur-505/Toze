@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./css/tozeTokens.module.scss";
 import Image from "next/image";
-import TozeTokenImg from "../../public/assets/Images/tozetokens.svg";
+import TozeTokenImg from "../../public/assets/Icons/png/tozetokens.png";
 
 const TozeTokens = () => {
   return (

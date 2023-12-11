@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./css/awakenSection.module.scss";
 import downArrow from "../../public/assets/Icons/downArrow.svg";
 import blogSvg from "../../public/assets/Icons/blogSvg.svg";
-import headerCard from "../../public/assets/Icons/headerCard.svg";
+import headerCard from "../../public/assets/Icons/png/headerCard.png";
 import bannerCircleImage from "../../public/assets/Icons/bannerCircle.svg";
 import bannerCircleImagemobile from "../../public/assets/Icons/bannerCircle-mobile.svg";
 import Image from "next/image";

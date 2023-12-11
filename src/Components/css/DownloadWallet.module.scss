@@ -1,10 +1,11 @@
 .DownloadWalletSec {
   @media (max-width: 768px) {
-    display: none;
+    padding: 100px 0 60px;
   }
   .downloadWalletMain {
     margin: 57px 0 17px 0;
     position: relative;
+    padding: 0 20px;
 
     &::after {
       position: absolute;
@@ -13,7 +14,7 @@
       left: 0;
       width: 80px;
       height: 80px;
-      background: url("../../../public/assets//Icons/cross.svg") no-repeat;
+      background: url("../../../public/assets/Icons/cross.svg") no-repeat;
       transform: rotate(30deg);
     }
     &::before {
@@ -23,12 +24,29 @@
       left: 85px;
       width: 40px;
       height: 40px;
-      background: url("../../../public/assets//Icons/Star.svg") no-repeat;
+      background: url("../../../public/assets/Icons/Star.svg") no-repeat;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0;
+      &::before {
+        background: url("../../../public/assets/Icons/cross-mobile.svg") no-repeat;
+        top: -110px;
+        left: unset;
+        right: 35px;
+      }
+      &::after {
+        background: url("../../../public/assets/Icons/cross-mobile.svg") no-repeat;
+        top: -75px;
+        left: 23px;
+        width: 57px;
+        height: 57px;
+      }
     }
 
     .downloadCardWrapper {
       border-radius: 40px;
-      width: 700px;
+      max-width: 700px;
       margin: auto;
       padding: 3px;
       background: linear-gradient(
@@ -73,6 +91,24 @@
         z-index: -1;
       }
 
+      @media (max-width: 768px) {
+        &::before {
+          width: 76px;
+          height: 76px;
+          top: -34px;
+          right: -15px;
+        }  
+        &::after {
+          width: 96px;
+          height: 96px;
+          bottom: -34px;
+        }  
+        .circle {
+          top: -57px;
+          left: 180px;
+        }
+      }
+
       .downloadCard {
         border-radius: 40px;
         padding: 40px;
@@ -104,6 +140,22 @@
           align-items: center;
           justify-content: center;
           gap: 16px;
+        }
+
+        @media (max-width: 768px) {
+          padding: 40px 16px;
+
+          .title {
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 56px;
+          }
+          .description {
+            margin-bottom: 32px;
+          }
+          .downloadBtn{
+            flex-wrap: wrap;
+          }          
         }
       }
     }

@@ -79,11 +79,6 @@
           background: #e4e4e7be;
         }
       }
-
-      .downloadBtn {
-        display: none;
-        gap: 16px;
-      }
     }
   }
 }
@@ -113,19 +108,6 @@
           font-size: 48px;
           font-weight: 500;
           line-height: 56px;
-        }
-        button {
-          display: none;
-        }
-        .downloadBtn {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          .downloadIcons {
-            width: auto;
-            height: 40px;
-          }
         }
       }
     }

@@ -2,11 +2,11 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./css/AiCentricFuture.module.scss";
 import Slider from "react-slick";
-import AiCentricImage1 from "../../public/assets/Icons/AiCentricImage1.svg";
-import AiCentricImage2 from "../../public/assets/Icons/AiCentricImage2.svg";
-import AiCentricImage3 from "../../public/assets/Icons/AiCentricImage3.svg";
-import AiCentricImage4 from "../../public/assets/Icons/AiCentricImage4.svg";
-import AiCentricImage5 from "../../public/assets/Icons/AiCentricImage5.svg";
+import AiCentricImage1 from "../../public/assets/Icons/png/AiCentricImage1.png";
+import AiCentricImage2 from "../../public/assets/Icons/png/AiCentricImage2.png";
+import AiCentricImage3 from "../../public/assets/Icons/png/AiCentricImage3.png";
+import AiCentricImage4 from "../../public/assets/Icons/png/AiCentricImage4.png";
+import AiCentricImage5 from "../../public/assets/Icons/png/AiCentricImage5.png";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
@@ -28,6 +28,7 @@ const AiCentricFuture = () => {
     if (!inView) {
       moveToSlide(0);
     }
+
   }, [inView]);
 
   const settings = {
@@ -36,8 +37,8 @@ const AiCentricFuture = () => {
     slidesToShow: 3,
     slidesToScroll: 2,
     autoplay: inView,
-    speed: 2000,
-    autoplaySpeed: 500,
+    speed: 3000,
+    autoplaySpeed: 2000,
     style: { borderRadius: "100px" },
   };
 
@@ -71,7 +72,7 @@ const AiCentricFuture = () => {
                 into reality with the simplicity of no-code app development.
               </p>
               <div className={styles.AiCentricImage}>
-                <Image src={AiCentricImage1} alt="AiCentricImage1" />
+                <Image src={AiCentricImage1} alt="AiCentricImage1" className={styles.CentricImage} />
               </div>
             </div>
             <div className={styles.AiCentricFutureSliderSub2}>
@@ -83,7 +84,7 @@ const AiCentricFuture = () => {
                 freeing up time for strategic initiatives.
               </p>
               <div className={styles.AiCentricImage}>
-                <Image src={AiCentricImage2} alt="AiCentricImage2" />
+                <Image src={AiCentricImage2} alt="AiCentricImage2" className={styles.CentricImage} />
               </div>
             </div>
             <div className={styles.AiCentricFutureSliderSub3}>
@@ -95,7 +96,7 @@ const AiCentricFuture = () => {
                 into reality with the simplicity of no-code app development.
               </p>
               <div className={styles.AiCentricImage}>
-                <Image src={AiCentricImage3} alt="AiCentricImage3" />
+                <Image src={AiCentricImage3} alt="AiCentricImage3" className={styles.CentricImage} />
               </div>
             </div>
             <div className={styles.AiCentricFutureSliderSub4}>
@@ -107,7 +108,7 @@ const AiCentricFuture = () => {
                 into reality with the simplicity of no-code app development.
               </p>
               <div className={styles.AiCentricImage}>
-                <Image src={AiCentricImage4} alt="AiCentricImage4" />
+                <Image src={AiCentricImage4} alt="AiCentricImage4" className={styles.CentricImage} />
               </div>
             </div>
             <div className={styles.AiCentricFutureSliderSub1}>
@@ -119,7 +120,7 @@ const AiCentricFuture = () => {
                 power of AI and contribute to the digital landscpe.
               </p>
               <div className={styles.AiCentricImage}>
-                <Image src={AiCentricImage5} alt="AiCentricImage5" />
+                <Image src={AiCentricImage5} alt="AiCentricImage5" className={styles.CentricImage} />
               </div>
             </div>
           </Slider>
@@ -134,7 +135,7 @@ const AiCentricFuture = () => {
               into reality with the simplicity of no-code app development.
             </p>
             <div className={styles.AiCentricImage}>
-              <Image src={AiCentricImage1} alt="AiCentricImage1" />
+              <Image src={AiCentricImage1} alt="AiCentricImage1" className={styles.CentricImage} />
             </div>
           </div>
           <div className={styles.AiCentricFutureSliderSub2}>
@@ -146,7 +147,7 @@ const AiCentricFuture = () => {
               freeing up time for strategic initiatives.
             </p>
             <div className={styles.AiCentricImage}>
-              <Image src={AiCentricImage2} alt="AiCentricImage2" />
+              <Image src={AiCentricImage2} alt="AiCentricImage2" className={styles.CentricImage} />
             </div>
           </div>
           <div className={styles.AiCentricFutureSliderSub3}>
@@ -158,7 +159,7 @@ const AiCentricFuture = () => {
               into reality with the simplicity of no-code app development.
             </p>
             <div className={styles.AiCentricImage}>
-              <Image src={AiCentricImage3} alt="AiCentricImage3" />
+              <Image src={AiCentricImage3} alt="AiCentricImage3" className={styles.CentricImage} />
             </div>
           </div>
           <div className={styles.AiCentricFutureSliderSub4}>
@@ -170,7 +171,7 @@ const AiCentricFuture = () => {
               into reality with the simplicity of no-code app development.
             </p>
             <div className={styles.AiCentricImage}>
-              <Image src={AiCentricImage4} alt="AiCentricImage4" />
+              <Image src={AiCentricImage4} alt="AiCentricImage4" className={styles.CentricImage} />
             </div>
           </div>
           <div className={styles.AiCentricFutureSliderSub5}>
@@ -182,7 +183,7 @@ const AiCentricFuture = () => {
               power of AI and contribute to the digital landscpe.
             </p>
             <div className={styles.AiCentricImage}>
-              <Image src={AiCentricImage5} alt="AiCentricImage5" />
+              <Image src={AiCentricImage5} alt="AiCentricImage5" className={styles.CentricImage} />
             </div>
           </div>
         </div>

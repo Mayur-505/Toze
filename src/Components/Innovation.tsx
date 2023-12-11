@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './css/innovation.module.scss'
 import Image from 'next/image'
-import InnovationImg from '../../public/assets/Images/innovation.svg'
+import InnovationImg from '../../public/assets/Icons/png/innovation.png'
 
 const Innovation = () => {
     return (
