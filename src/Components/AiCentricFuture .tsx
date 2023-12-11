@@ -44,7 +44,7 @@ const AiCentricFuture = () => {
 
   return (
     <section
-      className={`${styles.AiCentricFutureSec} ${styles.container}`}
+      className={`AiCentricFutureSlider ${styles.AiCentricFutureSec} ${styles.container}`}
       id="service"
       ref={ref}
     >
@@ -64,18 +64,21 @@ const AiCentricFuture = () => {
         <div className={styles.AiCentricFutureSlider}>
           <Slider key={inView ? 1 : 0} ref={sliderRef} {...settings}>
             <div className={`${styles.AiCentricFutureSliderSub1} ${styles.AiCentricFutureSlide1}`}>
-              <h3>No-Code App Development</h3>
-              <p>
-                Experience the future of app creation with our no-code platform.
-                No technical expertise required. Build, iterate, and launch
-                applications effortlessly. Empower your ideas and transform them
-                into reality with the simplicity of no-code app development.
-              </p>
+              <div className={styles.CentricCardTitle}>
+                <h3>No-Code App Development</h3>
+                <p>
+                  Experience the future of app creation with our no-code platform.
+                  No technical expertise required. Build, iterate, and launch
+                  applications effortlessly. Empower your ideas and transform them
+                  into reality with the simplicity of no-code app development.
+                </p>
+              </div>
               <div className={styles.AiCentricImage}>
                 <Image src={AiCentricImage1} alt="AiCentricImage1" className={styles.CentricImage} />
               </div>
             </div>
             <div className={styles.AiCentricFutureSliderSub2}>
+              <div className={styles.CentricCardTitle}>
               <h3>Task Automation</h3>
               <p>
                 Revolutionize your workflow with TOZE.AI. Simplify repetitive
@@ -83,11 +86,13 @@ const AiCentricFuture = () => {
                 Experience seamless efficiency as mundane tasks are automated,
                 freeing up time for strategic initiatives.
               </p>
+              </div>
               <div className={styles.AiCentricImage}>
                 <Image src={AiCentricImage2} alt="AiCentricImage2" className={styles.CentricImage} />
               </div>
             </div>
             <div className={styles.AiCentricFutureSliderSub3}>
+              <div className={styles.CentricCardTitle}>
               <h3>Chatbots Based on User Ideas</h3>
               <p>
                 Experience the future of app creation with our no-code platform.
@@ -95,11 +100,13 @@ const AiCentricFuture = () => {
                 applications effortlessly. Empower your ideas and transform them
                 into reality with the simplicity of no-code app development.
               </p>
+              </div>
               <div className={styles.AiCentricImage}>
                 <Image src={AiCentricImage3} alt="AiCentricImage3" className={styles.CentricImage} />
               </div>
             </div>
             <div className={styles.AiCentricFutureSliderSub4}>
+              <div className={styles.CentricCardTitle}>
               <h3>Monetization Opportunities</h3>
               <p>
                 Experience the future of app creation with our no-code platform.
@@ -107,11 +114,13 @@ const AiCentricFuture = () => {
                 applications effortlessly. Empower your ideas and transform them
                 into reality with the simplicity of no-code app development.
               </p>
+              </div>
               <div className={styles.AiCentricImage}>
                 <Image src={AiCentricImage4} alt="AiCentricImage4" className={styles.CentricImage} />
               </div>
             </div>
             <div className={`${styles.AiCentricFutureSliderSub1} ${styles.AiCentricFutureSlider2}`}>
+            <div className={styles.CentricCardTitle}>
               <h3>Personalized Assistant</h3>
               <p>
                 The personalized AI assistant generates app ideas and templates,
@@ -119,6 +128,7 @@ const AiCentricFuture = () => {
                 support ensures that a broader range of people can harness the
                 power of AI and contribute to the digital landscpe.
               </p>
+              </div>
               <div className={styles.AiCentricImage}>
                 <Image src={AiCentricImage5} alt="AiCentricImage5" className={styles.CentricImage} />
               </div>
@@ -127,6 +137,7 @@ const AiCentricFuture = () => {
         </div>
         <div className={styles.responsiveAiCentricFutureSlider}>
           <div className={styles.AiCentricFutureSliderSub1}>
+            <div className={styles.CentricCardTitle}>
             <h3>No-Code App Development</h3>
             <p>
               Experience the future of app creation with our no-code platform.
@@ -134,11 +145,13 @@ const AiCentricFuture = () => {
               applications effortlessly. Empower your ideas and transform them
               into reality with the simplicity of no-code app development.
             </p>
+            </div>
             <div className={styles.AiCentricImage}>
               <Image src={AiCentricImage1} alt="AiCentricImage1" className={styles.CentricImage} />
             </div>
           </div>
           <div className={styles.AiCentricFutureSliderSub2}>
+            <div className={styles.CentricCardTitle}>
             <h3>Task Automation</h3>
             <p>
               Revolutionize your workflow with TOZE.AI. Simplify repetitive
@@ -146,11 +159,13 @@ const AiCentricFuture = () => {
               Experience seamless efficiency as mundane tasks are automated,
               freeing up time for strategic initiatives.
             </p>
+            </div>
             <div className={styles.AiCentricImage}>
               <Image src={AiCentricImage2} alt="AiCentricImage2" className={styles.CentricImage} />
             </div>
           </div>
           <div className={styles.AiCentricFutureSliderSub3}>
+            <div className={styles.CentricCardTitle}>
             <h3>Chatbots Based on User Ideas</h3>
             <p>
               Experience the future of app creation with our no-code platform.
@@ -158,11 +173,13 @@ const AiCentricFuture = () => {
               applications effortlessly. Empower your ideas and transform them
               into reality with the simplicity of no-code app development.
             </p>
+            </div>
             <div className={styles.AiCentricImage}>
               <Image src={AiCentricImage3} alt="AiCentricImage3" className={styles.CentricImage} />
             </div>
           </div>
           <div className={styles.AiCentricFutureSliderSub4}>
+            <div className={styles.CentricCardTitle}>
             <h3>Monetization Opportunities</h3>
             <p>
               Experience the future of app creation with our no-code platform.
@@ -170,11 +187,13 @@ const AiCentricFuture = () => {
               applications effortlessly. Empower your ideas and transform them
               into reality with the simplicity of no-code app development.
             </p>
+            </div>
             <div className={styles.AiCentricImage}>
               <Image src={AiCentricImage4} alt="AiCentricImage4" className={styles.CentricImage} />
             </div>
           </div>
           <div className={styles.AiCentricFutureSliderSub5}>
+            <div className={styles.CentricCardTitle}>
             <h3>Personalized Assistant</h3>
             <p>
               The personalized AI assistant generates app ideas and templates,
@@ -182,6 +201,7 @@ const AiCentricFuture = () => {
               support ensures that a broader range of people can harness the
               power of AI and contribute to the digital landscpe.
             </p>
+            </div>
             <div className={styles.AiCentricImage}>
               <Image src={AiCentricImage5} alt="AiCentricImage5" className={styles.CentricImage} />
             </div>

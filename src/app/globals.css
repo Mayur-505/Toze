@@ -137,3 +137,14 @@ a {
   margin: 0 auto;
   padding: 100px 0;
 }
+
+.AiCentricFutureSlider .slick-track{
+  display: flex;
+}
+.AiCentricFutureSlider .slick-slide{  
+  height: auto;
+  min-height: unset;
+}
+.AiCentricFutureSlider .slick-slide > div{
+  height: 100%;
+}
