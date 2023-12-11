@@ -72,22 +72,22 @@ function TokenDistribution() {
             </div>
             <div className={styles.dis5}>
               <p>
-                Token Burning Mechanism (5%) <br /> 50M TOZE
+                Team and Advisors (10%) <br /> 100M TOZE                
               </p>
             </div>
             <div className={styles.dis6}>
               <p>
-                Initial Users and Airdrops (5%) <br /> 50M TOZE
+                Platform Reserve (5%) <br /> 50M TOZE
               </p>
             </div>
             <div className={styles.dis7}>
               <p>
-                Platform Reserve (5%) <br /> 50M TOZE
+                Initial Users and Airdrops (5%) <br /> 50M TOZE
               </p>
             </div>
             <div className={styles.dis8}>
               <p>
-                Team and Advisors (10%) <br /> 100M TOZE                
+                Token Burning Mechanism (5%) <br /> 50M TOZE
               </p>
             </div>
           </div>
